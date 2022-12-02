@@ -1,47 +1,29 @@
 package comfort.com.ua.controllers;
 
+import comfort.com.ua.repos.FurnitureTypeOfOrderRepository;
+import comfort.com.ua.services.FurnitureTypeOfOrderService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/furniture")
 public class FurnitureController {
 
-    @GetMapping("/pulling")
-    public String pullingPage()
+    @Autowired
+    private FurnitureTypeOfOrderService furnitureTypeOfOrderService;
+
+    @GetMapping("/{id}")
+    public String pullingPage(@PathVariable long id, Model model)
     {
-        return "furniture-pulling";
+        model.addAttribute("furnitureOrders", furnitureTypeOfOrderService.findByOrderId(id));
+        return "furniture-types-of-order";
     }
 
-    @GetMapping("/soft-to-order")
-    public String softToOrderPage()
-    {
-        return "furniture-to-order";
-    }
 
-    @GetMapping("/case-furniture")
-    public String casePage()
-    {
-        return "case-furniture";
-    }
-
-    @GetMapping("/dressing-rooms")
-    public String dressingPage()
-    {
-        return "dressing-rooms";
-    }
-
-    @GetMapping("/for-business")
-    public String forBusinessPage()
-    {
-        return "furniture-for-business";
-    }
-
-    @GetMapping("/mattresses")
-    public String mattressesPage()
-    {
-        return "mattresses";
-    }
 
 }

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Домашній затишок</title>
 </head>
 <body>
-<div th:each="type : ${types}">
-<a th:href="@{/furniture/{id}(id = ${type.getId()})}" th:text="${type.getType()}"></a>
+<div th:each="order : ${furnitureOrders}">
+    <a th:href="@{/furniture/{type}/{id}(type = ${order.getOrderId().getId()}, id = ${order.getId()})}" th:text="${order.getName()}"></a>
 </div>
 </body>
 </html>
