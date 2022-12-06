@@ -1,9 +1,9 @@
 package comfort.com.ua.controllers;
 
-import comfort.com.ua.repos.FurnitureTypeOfOrderRepository;
-import comfort.com.ua.services.FurnitureTypeOfOrderService;
+import comfort.com.ua.exceptions.NoSuchFurnitureException;
+import comfort.com.ua.services.FurnitureService;
+import jakarta.persistence.Column;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,15 +15,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class FurnitureController {
 
     @Autowired
-    private FurnitureTypeOfOrderService furnitureTypeOfOrderService;
+    private FurnitureService furnitureService;
 
-    @GetMapping("/{id}")
-    public String pullingPage(@PathVariable long id, Model model)
+    @GetMapping("/{furnitureType}")
+    public String getAllFurniture(@PathVariable long furnitureType, Model model)
     {
-        model.addAttribute("furnitureOrders", furnitureTypeOfOrderService.findByOrderId(id));
-        return "furniture-types-of-order";
+           model.addAttribute("furniture", furnitureService.findByFurnitureTypeOfOrderId(furnitureType));
+           return "furnitures";
     }
 
-
+    @GetMapping("/{furnitureType}/{id}")
+    public String getFurniture(@PathVariable long furnitureType, @PathVariable long id, Model model) throws NoSuchFurnitureException {
+           model.addAttribute("furniture", furnitureService.findById(id).get());
+           return "furniture";
+    }
 
 }

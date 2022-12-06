@@ -5,8 +5,10 @@
     <title>Домашній затишок</title>
 </head>
 <body>
-<div th:each="order : ${furnitureOrders}">
-    <a th:href="@{/furniture/{type}(type = ${order.getOrderId().getId()})}" th:text="${order.getName()}"></a>
+<div>
+    <p th:text="${furniture.getName()}"></p>
+    <p th:text="${furniture.getDescription()}"></p>
+    <p th:text="${furniture.getPrice()}"></p>
 </div>
 </body>
 </html>

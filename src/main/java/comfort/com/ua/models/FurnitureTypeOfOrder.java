@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Table(name = "furniture_type_of_order")
 @Data
@@ -20,5 +22,8 @@ public class FurnitureTypeOfOrder {
     @ManyToOne()
     @JoinColumn(name = "order_type_id", referencedColumnName = "id")
     private TypeOfOrder orderId;
+
+    @OneToMany(mappedBy = "furnitureTypeOfOrderId")
+    private List<Furniture> furniture;
 
 }
