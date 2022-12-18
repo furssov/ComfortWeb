@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
 @Service
@@ -17,5 +18,10 @@ public class FurnitureTypeOfOrderServiceImpl implements FurnitureTypeOfOrderServ
     public List<FurnitureTypeOfOrder> findByOrderId(Long id) {
         List<FurnitureTypeOfOrder> furnitureTypeOfOrders = furnitureTypeOfOrderRepository.findAll();
         return furnitureTypeOfOrders.stream().filter(furnitureTypeOfOrder -> furnitureTypeOfOrder.getOrderId().getId() == id).collect(Collectors.toList());
+    }
+
+    @Override
+    public FurnitureTypeOfOrder findById(long id) {
+        return furnitureTypeOfOrderRepository.findById(id).orElseThrow( () -> new NoSuchElementException("no such furniture"));
     }
 }

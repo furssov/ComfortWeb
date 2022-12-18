@@ -6,7 +6,7 @@
 </head>
 <body>
 <div th:each="f : ${furniture}">
-    <a th:href="@{/furniture/{furnitureType}/{id}(furnitureType = ${f.getFurnitureTypeOfOrderId().getId()}, id = ${f.getId()})}" th:text="${f.getName()}">
+    <a th:href="@{/furniture/f/{id}(id = ${f.getId()})}" th:text="${f.getName()}">
     </a>
     <p th:text="${f.getPrice()}"></p>
     <p th:text="${f.getDescription()}"></p>
