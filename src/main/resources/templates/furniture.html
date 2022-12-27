@@ -5,6 +5,12 @@
     <title>Домашній затишок</title>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a th:href="@{/home}" class="navbar-brand">Домашний уют</a>
+    </div>
+</nav>
+</header>
 <div>
     <p th:text="${furniture.getName()}"></p>
     <p th:text="${furniture.getDescription()}"></p>
