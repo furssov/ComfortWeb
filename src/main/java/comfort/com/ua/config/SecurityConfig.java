@@ -1,5 +1,5 @@
 package comfort.com.ua.config;
-import comfort.com.ua.security.AuthProviderImpl;
+
 import comfort.com.ua.services.impl.AdminDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -16,8 +16,6 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class SecurityConfig  {
 
-
-
     private final AdminDetailService adminDetailService;
 
     @Autowired
@@ -33,9 +31,17 @@ public class SecurityConfig  {
                 .authorizeHttpRequests()
                 .anyRequest()
                 .authenticated()
+
                 .and()
-                .authenticationProvider(authenticationProvider())
-                .httpBasic();
+                .formLogin()
+
+                .permitAll()
+
+                .and()
+                .logout()
+                .permitAll();
+
+
         return http.build();
     }
 
