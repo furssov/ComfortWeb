@@ -22,4 +22,6 @@ public class Admin {
     @Column
     private String password;
 
+    @Column
+    private String role;
 }
