@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Домашній затишок</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -10,12 +12,166 @@
         <a th:href="@{/home}" class="navbar-brand">Домашний уют</a>
     </div>
 </nav>
-</header>
-<div th:each="f : ${furniture}">
-    <a th:href="@{/furniture/f/{id}(id = ${f.getId()})}" th:text="${f.getName()}">
-    </a>
-    <p th:text="${f.getPrice()}"></p>
-    <p th:text="${f.getDescription()}"></p>
+
+<div class="container py-5  bg-light"  id="items">
+    <div class="row gy-3">
+        <div class="row"><h1>Послуги</h1></div>
+    </div>
+    <div class="row gy-5 gx-5 row-cols-3">
+
+        <div th:each="f : ${furniture}">
+
+
+        <div class="col">
+
+                <div class="card">
+
+                    <div th:switch="${f.getId()}">
+
+                        <div th:case="1">
+                            <img height="300" src="/images/furnitures/1.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="2">
+                            <img height="300" src="/images/furnitures/2.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="3">
+                            <img height="300" src="/images/furnitures/3.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="4">
+                            <img height="300" src="/images/furnitures/4.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="5">
+                            <img height="300" src="/images/furnitures/5.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="6">
+                            <img height="300" src="/images/furnitures/6.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="7">
+                            <img height="300" src="/images/furnitures/7.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="8">
+                            <img height="300" src="/images/furnitures/8.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="9">
+                            <img height="300" src="/images/furnitures/9.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="10">
+                            <img height="300" src="/images/furnitures/10.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="11">
+                            <img height="300" src="/images/furnitures/11.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="12">
+                            <img height="300" src="/images/furnitures/12.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="13">
+                            <img height="300" src="/images/furnitures/13.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="14">
+                            <img height="300" src="/images/furnitures/14.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="15">
+                            <img height="300" src="/images/furnitures/15.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="16">
+                            <img height="300" src="/images/furnitures/16.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="17">
+                            <img height="300" src="/images/furnitures/17.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="18">
+                            <img height="300" src="/images/furnitures/18.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="19">
+                            <img height="300" src="/images/furnitures/19.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="20">
+                            <img height="300" src="/images/furnitures/20.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="21">
+                            <img height="300" src="/images/furnitures/21.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="22">
+                            <img height="300" src="/images/furnitures/22.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="23">
+                            <img height="300" src="/images/furnitures/23.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="24">
+                            <img height="300" src="/images/furnitures/24.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="25">
+                            <img height="300" src="/images/furnitures/25.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="26">
+                        <img height="300" src="/images/furnitures/26.png" class="card-img-top" alt="...">
+                    </div>
+                        <div th:case="27">
+                            <img height="300" src="/images/furnitures/27.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="28">
+                            <img height="300" src="/images/furnitures/28.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="29">
+                            <img height="300" src="/images/furnitures/29.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="30">
+                            <img height="300" src="/images/furnitures/30.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="31">
+                            <img height="300" src="/images/furnitures/31.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="32">
+                            <img height="300" src="/images/furnitures/32.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="33">
+                            <img height="300" src="/images/furnitures/33.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="34">
+                            <img height="300" src="/images/furnitures/34.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="35">
+                            <img height="300" src="/images/furnitures/35.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="36">
+                            <img height="300" src="/images/furnitures/36.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="37">
+                            <img height="300" src="/images/furnitures/37.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="38">
+                            <img height="300" src="/images/furnitures/38.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="39">
+                            <img height="300" src="/images/furnitures/39.png" class="card-img-top" alt="...">
+                        </div>
+                        <div th:case="40">
+                            <img height="300" src="/images/furnitures/40.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+
+
+                    <div class="card-body">
+                        <h5 class="card-title" th:text="${f.getName()}">Заголовок карточки</h5>
+                        <p class="card-text" th:text="${f.getDescription()}">Небольшой пример текста, основанного на названии карточки и составляющего основную часть содержимого карточки.
+                        <hr />
+                        <b>
+                        <p th:text="${f.getPrice()}"></p>
+                        </p>
+                        </b>
+                        <a th:href="@{/furniture/f/{id}(id = ${f.getId()})}" th:text="Замовити" class="btn btn-success">Иди куда-нибудь</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </body>
 </html>
