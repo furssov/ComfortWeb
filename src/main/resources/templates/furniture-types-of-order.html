@@ -15,7 +15,7 @@
 </header>
 
 <div th:each="order : ${furnitureOrders}">
-    <a th:href="@{/furniture/{type}(type = ${order.getOrderId().getId()})}" th:text="${order.getName()}"></a>
+    <a th:href="@{/furniture/{type}(type = ${order.getId()})}" th:text="${order.getName()}"></a>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
