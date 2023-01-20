@@ -36,6 +36,9 @@ public class Furniture {
 
     @Column
     @Enumerated(EnumType.STRING)
-    public FurnitureType type;
+    private FurnitureType type;
+
+    @Column
+    private String image;
 
 }

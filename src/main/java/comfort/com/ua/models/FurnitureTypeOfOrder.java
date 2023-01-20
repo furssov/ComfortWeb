@@ -29,6 +29,8 @@ public class FurnitureTypeOfOrder {
     @OneToMany(mappedBy = "furnitureTypeOfOrderId")
     private List<Furniture> furniture;
 
+    @Column
+    private String image;
 
 
 }

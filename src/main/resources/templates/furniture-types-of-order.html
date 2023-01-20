@@ -24,63 +24,10 @@
 
                 <div class="card">
 
-                    <div th:switch="${order.getId()}">
 
-                        <div th:case="1">
-                            <img height="300" src="/images/furniture_type_of_order_image/1.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="2">
-                            <img height="300" src="/images/furniture_type_of_order_image/2.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="3">
-                            <img height="300" src="/images/furniture_type_of_order_image/3.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="4">
-                            <img height="300" src="/images/furniture_type_of_order_image/4.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="5">
-                            <img height="300" src="/images/furniture_type_of_order_image/5.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="6">
-                            <img height="300" src="/images/furniture_type_of_order_image/6.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="7">
-                            <img height="300" src="/images/furniture_type_of_order_image/7.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="8">
-                            <img height="300" src="/images/furniture_type_of_order_image/8.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="9">
-                            <img height="300" src="/images/furniture_type_of_order_image/9.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="10">
-                            <img height="300" src="/images/furniture_type_of_order_image/10.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="11">
-                            <img height="300" src="/images/furniture_type_of_order_image/11.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="12">
-                            <img height="300" src="/images/furniture_type_of_order_image/12.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="13">
-                            <img height="300" src="/images/furniture_type_of_order_image/13.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="14">
-                            <img height="300" src="/images/furniture_type_of_order_image/14.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="15">
-                            <img height="300" src="/images/furniture_type_of_order_image/15.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="16">
-                            <img height="300" src="/images/furniture_type_of_order_image/16.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="17">
-                            <img height="300" src="/images/гардеробные.png" class="card-img-top" alt="...">
-                        </div>
-                        <div th:case="18">
-                            <img height="300" src="/images/офис.png" class="card-img-top" alt="...">
-                        </div>
-                    </div>
+                            <img height="300" th:src="${order.getImage()}" class="card-img-top" alt="...">
+
+
 
                     <div class="card-body">
                         <h5 class="card-title" th:text="${order.getName()}">Заголовок карточки</h5>

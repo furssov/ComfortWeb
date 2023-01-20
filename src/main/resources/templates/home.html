@@ -210,41 +210,11 @@
          <div class="col">
 
              <div class="card">
-                 <div th:switch="${type.getId()}">
-                 <div th:case="1">
-
-                     <img height="300" src="/images/перетяжка.png" class="card-img-top" alt="...">
 
 
-                 </div>
+                     <img height="300" th:src="${type.getImage()}" class="card-img-top" alt="...">
 
-                 <div th:case="2">
 
-                     <img height="300" src="/images/на%20заказ.png" class="card-img-top" alt="...">
-
-                 </div>
-                 <div th:case="3">
-
-                     <img height="300" src="/images/корпусная.png" class="card-img-top" alt="...">
-
-                 </div>
-                 <div th:case="4">
-
-                     <img height="300" src="/images/гардеробные.png" class="card-img-top" alt="...">
-
-                 </div>
-                 <div th:case="5">
-
-                     <img height="300" src="/images/офис.png" class="card-img-top" alt="...">
-
-                 </div>
-                 <div th:case="6">
-
-                     <img height="300" src="/images/матрасы.png" class="card-img-top" alt="...">
-
-                 </div>
-
-             </div>
 
                  <div class="card-body">
                      <h5 class="card-title" th:text="${type.getType()}">Заголовок карточки</h5>
