@@ -5,7 +5,6 @@ import comfort.com.ua.models.Furniture;
 import comfort.com.ua.repos.FurnitureRepo;
 import comfort.com.ua.services.FurnitureService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.expression.ExpressionException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,6 +21,14 @@ public class FurnitureServiceImpl implements FurnitureService {
     public List<Furniture> findByFurnitureTypeOfOrderId(long id) {
         List<Furniture> furniture = furnitureRepo.findAll();
         return furniture.stream().filter(furniture1 -> furniture1.getFurnitureTypeOfOrderId().getId() == id).collect(Collectors.toList());
+    }
+
+
+    @Override
+    public List<Furniture> findAllGallery() {
+        List<Furniture> furnitures = furnitureRepo.findAll();
+
+        return furnitures.stream().filter(furniture -> furniture.getType() != null).collect(Collectors.toList());
     }
 
     @Override

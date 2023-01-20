@@ -8,5 +8,6 @@ import java.util.Optional;
 
 public interface FurnitureService {
     List<Furniture> findByFurnitureTypeOfOrderId(long id);
+    List<Furniture> findAllGallery();
     Optional<Furniture> findById(long id) throws NoSuchFurnitureException;
 }

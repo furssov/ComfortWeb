@@ -34,4 +34,8 @@ public class Furniture {
     @OneToMany(mappedBy = "furnitureId")
     private List<Order> orders;
 
+    @Column
+    @Enumerated(EnumType.STRING)
+    public FurnitureType type;
+
 }
