@@ -9,7 +9,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a th:href="@{/}" class="navbar-brand">Домашний уют</a>
+        <a th:href="@{/}" class="navbar-brand">Домашній затишок</a>
     </div>
 </nav>
 </header>
@@ -19,14 +19,16 @@
     <p th:text="${furniture.getDescription()}"></p>
     <p th:text="${furniture.getPrice()}"></p>
 </div>
+<div class="container bg-light">
 <form th:method="post" th:action="@{/furniture/f/{id}(id = ${furniture.getId()})}" th:object="${order}"  class="row g-3">
-    <div class="col-3">
+    <div class="row">
+    <div class="col-4">
         <label for="validationDefault01" class="form-label">Ім'я</label>
         <input type="text" th:field="*{name}" class="form-control" id="validationDefault01" value="Іван Шевченко" required>
         <div style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</div>
     </div>
 
-    <div class="col-3">
+    <div class="col-4">
         <label for="validationDefaultUsername" class="form-label">Коментар</label>
         <div class="input-group">
             <input type="text" th:field="*{comment}" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
@@ -34,13 +36,15 @@
         <div style="color:red" th:if="${#fields.hasErrors('comment')}" th:errors="*{comment}">Name Error</div>
 
     </div>
-    <div class="col-3">
+    <div class="col-4">
         <label for="inputEmail3" class="form-label">Email</label>
             <input type="email" th:field="*{email}" class="form-control" id="inputEmail3">
         <div style="color:red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Name Error</div>
 
     </div>
-    <div class="col-3">
+    </div>
+    <div class="row gx-5">
+    <div class="col-2">
         <label for="validationDefault05" class="form-label">Контактний номер телефону</label>
         <input type="text" th:field="*{phoneNumber}" class="form-control" id="validationDefault05" required>
         <div style="color:red" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}">Name Error</div>
@@ -49,6 +53,8 @@
     <div class="col-3">
         <button class="btn btn-primary" type="submit">Отправить форму</button>
     </div>
+    </div>
 </form>
+</div>
 </body>
 </html>
