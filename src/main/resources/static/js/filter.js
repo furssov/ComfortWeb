@@ -1,41 +1,31 @@
-
-
-function app()
-{
+// Write JavaScript here
+function app() {
     const buttons = document.querySelectorAll('.btn')
     const cards = document.querySelectorAll('.card')
 
-    function filter(items, category)
-    {
-
+    function filter(category, items) {
         items.forEach((item) => {
-            const isItemContainsCategory = !item.classList.contains(category)
+            const isItemFiltered = !item.classList.contains(category)
             const isShowAll = category.toLowerCase() === 'all'
-            if (isItemContainsCategory && !isShowAll)
-            {
-                item.classList.add('anim')
-            }
-            else
-            {
+            if (isItemFiltered && !isShowAll) {
+                item.classList.add('anime')
+            } else {
                 item.classList.remove('hide')
-                item.classList.remove('anim')
+                item.classList.remove('anime')
             }
         })
     }
 
-    buttons.forEach(
-        (button) =>{
-            button.addEventListener('click', () => {
-                const currentCategory = button.dataset.filter
-                filter(cards, currentCategory)
-            })
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const currentCategory = button.dataset.filter
+            filter(currentCategory, cards)
         })
+    })
 
-    cards.forEach((card) =>
-    {
-        card.ontransitionend = function ()
-        {
-            if (card.classList.contains('anim')) {
+    cards.forEach((card) => {
+        card.ontransitionend = function() {
+            if (card.classList.contains('anime')) {
                 card.classList.add('hide')
             }
         }

@@ -13,11 +13,38 @@
     </div>
 </nav>
 </header>
-<div>
-    <img th:src="${furniture.getImage()}">
-    <p th:text="${furniture.getName()}"></p>
-    <p th:text="${furniture.getDescription()}"></p>
-    <p th:text="${furniture.getPrice()}"></p>
+
+<div class="container py-5 bg-light">
+    <div class="row py-3">
+        <div class="col-3">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img th:src="${furniture.getImage()}" style=" width: 300px;height: 250px" alt="...">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row py-2">
+        <div class="col">
+            <h1 th:text="${furniture.getName()}"></h1>
+        </div>
+    </div>
+    <div class="row">
+            <h5 style="color: darkgrey" th:text="${furniture.getDescription()}"></h5>
+
+    </div>
+
 </div>
 <div class="container bg-light">
 <form th:method="post" th:action="@{/furniture/f/{id}(id = ${furniture.getId()})}" th:object="${order}"  class="row g-3">
