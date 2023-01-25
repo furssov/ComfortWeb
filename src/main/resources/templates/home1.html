@@ -240,13 +240,13 @@
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="/images/slide1.jpg" width="500px" height="400px" style="border: black 4px solid; border-radius: 10px" alt="...">
+                                <img src="/images/slide1.jpg" width="500px" height="400px" style="border: black 3px solid; border-radius: 10px" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/homepage2.jpg" width="500px" height="400px" style="border: black 4px solid; border-radius: 10px" alt="...">
+                                <img src="/images/homepage2.jpg" width="500px" height="400px" style="border: black 3px solid; border-radius: 10px" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/slide3.jpg" width="500px" height="400px"  style="border: black 4px solid; border-radius: 10px" alt="...">
+                                <img src="/images/slide3.jpg" width="500px" height="400px"  style="border: black 3px solid; border-radius: 10px" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
@@ -273,22 +273,22 @@
                     <div id="carouselExampleControls1"  class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="/images/else1.jpg" width="500px" height="400px" style="border: black 4px solid; border-radius: 10px"  alt="...">
+                                <img src="/images/else1.jpg" width="500px" height="400px" style="border: black 3px solid; border-radius: 10px"  alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/else2.jpg" width="500px" height="400px" style="border: black 4px solid; border-radius: 10px" alt="...">
+                                <img src="/images/else2.jpg" width="500px" height="400px" style="border: black 3px solid; border-radius: 10px" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/else3.jpg" width="500px" height="400px" style="border: black 4px solid; border-radius: 10px" alt="...">
+                                <img src="/images/else3.jpg" width="500px" height="400px" style="border: black 3px solid; border-radius: 10px" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/else4.jpg" width="500px" height="400px" style="border: black 4px solid; border-radius: 10px" alt="...">
+                                <img src="/images/else4.jpg" width="500px" height="400px" style="border: black 3px solid; border-radius: 10px" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/else5.jpg" width="500px" height="400px" style="border: black 4px solid; border-radius: 10px" alt="...">
+                                <img src="/images/else5.jpg" width="500px" height="400px" style="border: black 3px solid; border-radius: 10px" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/else6.jpg" width="500px" height="400px" style="border: black 4px solid; border-radius: 10px" alt="...">
+                                <img src="/images/else6.jpg" width="500px" height="400px" style="border: black 3px solid; border-radius: 10px" alt="...">
                             </div>
                         </div>
                         <button  id="carouselExampleControls2" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="prev">
@@ -317,7 +317,7 @@
                     <h1 class="display-5 fw-bold">Домашній затишок</h1>
                     <p class="col-md-8 fs-4">З 2004 року наша компанія  виробляє м'які та корпусні меблі. Надаємо послуги з перетяжки та реставрації м'яких,
                         у тому числі антикварних меблів.</p>
-                    <button class="btn btn-primary btn-lg" type="button">Example button</button>
+                    <a th:href="@{https://dom-uyt.com.ua/ua/testimonials}"> <button class="btn btn-primary btn-lg" type="button">Подивитись відгуки</button></a>
                 </div>
             </div>
 
@@ -326,7 +326,7 @@
                     <div class="h-100 p-5 text-white bg-dark rounded-3">
                         <h2>Послуги</h2>
                         <p>Надаємо широкий спектр послуг з виготовлення та ремонту меблів. Займаємось продажем меблевих тканин від провідних виробників. У нашому каталозі Ви зможете знайти популярні колекції шеніл, рогожки, флока, велюру, штучної шкіри і т.д.</p>
-                        <button class="btn btn-outline-light" type="button">Example button</button>
+                        <a th:href="@{/gallery}"> <button class="btn btn-outline-light" type="button">Галерея робіт</button></a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -340,7 +340,7 @@
             </div>
 
             </div>
-            <hr class="featurette-divider">
+
 
             <!-- /END THE FEATURETTES -->
 
@@ -348,13 +348,41 @@
 
     </div>
 
-
+    <div class="container" id="place">
+        <hr class="featurette-divider py-2">
+        <div class="row ">
+            <div class="row"><h1 style="text-align: center">Місце положення</h1><i class="line"></i> </div>
+        </div>
+        <div class="row py-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.9482646142787!2d34.99660281575641!3d48.41913753948729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe4a5b19ac83b%3A0x76c8f7b66203b1b0!2z0LLRg9C70LjRhtGPINCd0L7QstC-0LHRg9C00ZbQstC10LvRjNC90LAsIDUsINCU0L3RltC_0YDQviwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0ZfQvdCwLCA0OTAwMA!5e0!3m2!1suk!2sro!4v1672116910363!5m2!1suk!2sro"
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
 
     <!-- FOOTER -->
-    <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Головна сторінка</a></li>
+                <li class="nav-item"><a href="#items" class="nav-link px-2 text-muted">Послуги</a></li>
+                <li class="nav-item"><a href="#do" class="nav-link px-2 text-muted">Що робимо</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">Про нас</a></li>
+                <li class="nav-item"><a href="#place" class="nav-link px-2 text-muted">Мапа</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Домашній затишок</p>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
