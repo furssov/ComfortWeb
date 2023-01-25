@@ -24,7 +24,7 @@ public class HomeController {
     {
         log.info("Home page has been visited");
         model.addAttribute("types", typeOfOrderRepository.findAll());
-        return "home1";
+        return "home";
     }
 
 
