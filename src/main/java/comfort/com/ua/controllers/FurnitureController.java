@@ -3,6 +3,7 @@ package comfort.com.ua.controllers;
 import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.models.Furniture;
 import comfort.com.ua.models.Order;
+import comfort.com.ua.repos.TypeOfOrderRepository;
 import comfort.com.ua.services.FurnitureService;
 import comfort.com.ua.services.OrderService;
 
@@ -25,6 +26,9 @@ public class FurnitureController {
 
     @Autowired
     private FurnitureService furnitureService;
+
+    @Autowired
+    private TypeOfOrderRepository type;
     @Autowired
     private OrderService orderService;
 
@@ -39,6 +43,7 @@ public class FurnitureController {
     public String getFurniture( @PathVariable long id, Model model) throws NoSuchFurnitureException {
            model.addAttribute("furniture", furnitureService.findById(id).orElseThrow());
            model.addAttribute("order", new Order());
+           model.addAttribute("typeOfOrders", type.findAll());
            return "furniture";
     }
 

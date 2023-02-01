@@ -12,6 +12,10 @@
             width: 100px;
             background-color: black;
         }
+        .card:hover {
+            transition: transform .5s;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -78,7 +82,7 @@
             <div class="col">
 
                 <a style="color: black"  th:href="@{/furniture/{type}(type = ${order.getId()})}">
-                <div class="card">
+                <div class="card ">
 
 
                             <img height="300" th:src="${order.getImage()}" class="card-img-top" alt="...">
