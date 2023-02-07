@@ -34,11 +34,11 @@ public class Furniture {
     @OneToMany(mappedBy = "furnitureId")
     private List<Order> orders;
 
+
     @Column
     @Enumerated(EnumType.STRING)
     private FurnitureType type;
 
-    @Column
-    private String image;
-
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "furniture")
+    private List<ImageDB> images;
 }

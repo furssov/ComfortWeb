@@ -18,6 +18,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 @RequestMapping("/furniture")
@@ -35,7 +37,8 @@ public class FurnitureController {
     @GetMapping("/{furnitureType}")
     public String getAllFurniture(@PathVariable long furnitureType, Model model)
     {
-           model.addAttribute("furniture", furnitureService.findByFurnitureTypeOfOrderId(furnitureType));
+        List<Furniture> furnitures = furnitureService.findByFurnitureTypeOfOrderId(furnitureType);
+           model.addAttribute("furniture", furnitures);
            return "furnitures";
     }
 
@@ -43,7 +46,6 @@ public class FurnitureController {
     public String getFurniture( @PathVariable long id, Model model) throws NoSuchFurnitureException {
            model.addAttribute("furniture", furnitureService.findById(id).orElseThrow());
            model.addAttribute("order", new Order());
-           model.addAttribute("typeOfOrders", type.findAll());
            return "furniture";
     }
 

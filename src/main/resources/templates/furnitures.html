@@ -85,7 +85,7 @@
 
                 <div class="card">
 
-                    <img height="250" th:src="${f.getImage()}" class="card-img-top" alt="...">
+                    <img height="250" th:src="${f.getImages().get(0).getPath()}" class="card-img-top" alt="...">
 
 
 
@@ -101,10 +101,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
-
+        </div>
 </div>
 
 <!-- FOOTER -->

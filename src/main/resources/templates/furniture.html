@@ -96,7 +96,23 @@
                 <p class="lead">Працюємо в різних меблевих стилях з незмінною якістю. Більше 10 років ми виготовляємо неповторні примірники меблевого виробництва в класичному, мінімалістичному стилі, в стилі модерн.</p>
             </div>
             <div class="col-md-5 order-md-1 image">
-                <img  th:src="${furniture.getImage()}" style="border: black 3px solid; border-radius: 10px" alt="" width="500" height="400">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div th:each="image : ${furniture.getImages()}">
+                            <div class="carousel-item active">
+                                <img  th:src="${image.getPath()}" style="border: black 3px solid; border-radius: 10px" alt="" width="500" height="400">
+                            </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
             </div>
         </div>
 
@@ -114,15 +130,27 @@
                     <span class="badge bg-primary rounded-pill">5</span>
                 </h4>
                 <ul class="list-group mb-3">
-                    <div th:each="type : ${typeOfOrders}">
                     <li class="list-group-item d-flex justify-content-between lh-sm">
-                        <div>
-                            <h6 class="my-0"><a th:href="@{/types/{id}(id = ${type.getId()})}" th:text="${type.getType()}"></a></h6>
-                            <small class="text-muted">Товари</small>
-                        </div>
-
+                        <h6 class="my-0"><a th:href="@{/types/1}">Перетяжка меблів</a></h6>
+                        <small class="text-muted">Товари</small>
                     </li>
-                    </div>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <h6 class="my-0"><a th:href="@{/types/2}">М'які меблі на замовлення</a></h6>
+                        <small class="text-muted">Товари</small>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <h6 class="my-0"><a th:href="@{/types/3}">Корпусні меблі на замовлення</a></h6>
+                        <small class="text-muted">Товари</small>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <h6 class="my-0"><a th:href="@{/types/4}">Гардеробні кімнати під замовлення</a></h6>
+                        <small class="text-muted">Товари</small>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <h6 class="my-0"><a th:href="@{/types/5}">М'які меблі для ресторану та офісу</a></h6>
+                        <small class="text-muted">Товари</small>
+                    </li>
+
                 </ul>
 
             </div>

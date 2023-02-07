@@ -68,6 +68,7 @@
             transform: scale(0);
             opacity: 0;
         }
+
     </style>
 
 
@@ -143,6 +144,7 @@
                     <button type="button" class="btn btn-dark" data-filter="bed">Ліжка</button>
                     <button type="button" class="btn btn-dark" data-filter="table">Столи</button>
                     <button type="button" class="btn btn-dark" data-filter="puff">Пуфи</button>
+                    <button type="button" class="btn btn-dark" data-filter="kitchen">Кухні</button>
 
                 </div>
             </div>
@@ -153,8 +155,9 @@
                 <div th:each="f : ${furniture}">
                 <div class="col">
                     <div class="card shadow-sm" th:classappend="${f.getType().toString().toLowerCase()}">
-                    <img th:src="${f.getImage()}" width="100%" height="225" />
+                    <img th:src="${f.getImages().get(0).getPath()}" width="100%" height="225" />
                         <div class="card-body">
+                            <b th:text="${f.getName()}"></b>
                             <p class="card-text" th:text="${f.getDescription()}"></p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted" th:text="${f.getPrice()}"></small>
