@@ -18,16 +18,18 @@ public class FurnitureServiceImpl implements FurnitureService {
     private FurnitureRepo furnitureRepo;
 
     @Override
-    public List<Furniture> findByFurnitureTypeOfOrderId(long id) {
+    public List<Furniture> findByFurnitureTypeOfOrderId(long id) throws NoSuchFurnitureException {
         List<Furniture> furniture = furnitureRepo.findAll();
+        if (!furniture.isEmpty())
         return furniture.stream().filter(furniture1 -> furniture1.getFurnitureTypeOfOrderId().getId() == id).collect(Collectors.toList());
+        else
+            throw new NoSuchFurnitureException("NO SUCH TYPE");
     }
 
 
     @Override
     public List<Furniture> findAllGallery() {
         List<Furniture> furnitures = furnitureRepo.findAll();
-
         return furnitures.stream().filter(furniture -> furniture.getType() != null).collect(Collectors.toList());
     }
 

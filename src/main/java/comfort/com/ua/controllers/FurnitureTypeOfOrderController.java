@@ -1,5 +1,6 @@
 package comfort.com.ua.controllers;
 
+import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.services.FurnitureTypeOfOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,8 +17,7 @@ public class FurnitureTypeOfOrderController {
     private FurnitureTypeOfOrderService furnitureTypeOfOrderService;
 
     @GetMapping("/{id}")
-    public String pullingPage(@PathVariable long id, Model model)
-    {
+    public String pullingPage(@PathVariable long id, Model model) throws NoSuchFurnitureException {
         model.addAttribute("furnitureOrders", furnitureTypeOfOrderService.findByOrderId(id));
         return "furniture-types-of-order";
     }

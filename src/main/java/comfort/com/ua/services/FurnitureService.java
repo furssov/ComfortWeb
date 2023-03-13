@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface FurnitureService {
-    List<Furniture> findByFurnitureTypeOfOrderId(long id);
+    List<Furniture> findByFurnitureTypeOfOrderId(long id) throws NoSuchFurnitureException;
     List<Furniture> findAllGallery();
     Optional<Furniture> findById(long id) throws NoSuchFurnitureException;
 }

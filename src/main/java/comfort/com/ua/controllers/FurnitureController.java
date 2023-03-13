@@ -29,14 +29,12 @@ public class FurnitureController {
     @Autowired
     private FurnitureService furnitureService;
 
-    @Autowired
-    private TypeOfOrderRepository type;
+
     @Autowired
     private OrderService orderService;
 
     @GetMapping("/{furnitureType}")
-    public String getAllFurniture(@PathVariable long furnitureType, Model model)
-    {
+    public String getAllFurniture(@PathVariable long furnitureType, Model model) throws NoSuchFurnitureException {
         List<Furniture> furnitures = furnitureService.findByFurnitureTypeOfOrderId(furnitureType);
            model.addAttribute("furniture", furnitures);
            return "furnitures";
