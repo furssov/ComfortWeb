@@ -1,8 +1,9 @@
-package comfort.com.ua.services.impl;
+package comfort.com.ua.unit.services;
 
 import comfort.com.ua.models.Order;
 import comfort.com.ua.repos.OrderRepository;
 import comfort.com.ua.services.OrderService;
+import comfort.com.ua.services.impl.OrderServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mockito;

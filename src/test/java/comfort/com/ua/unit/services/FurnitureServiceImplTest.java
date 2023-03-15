@@ -1,4 +1,4 @@
-package comfort.com.ua.services.impl;
+package comfort.com.ua.unit.services;
 
 import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.models.Furniture;
@@ -6,6 +6,7 @@ import comfort.com.ua.models.FurnitureType;
 import comfort.com.ua.models.FurnitureTypeOfOrder;
 import comfort.com.ua.repos.FurnitureRepo;
 import comfort.com.ua.services.FurnitureService;
+import comfort.com.ua.services.impl.FurnitureServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mockito;

@@ -3,6 +3,7 @@ package comfort.com.ua.models;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 @Entity
 @Table(name = "type_of_order")
 @Data
+@EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
 public class TypeOfOrder {

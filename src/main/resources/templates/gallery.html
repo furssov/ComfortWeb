@@ -136,7 +136,7 @@
             <div class="row py-2">
                 <div class="btn-group" role="group" aria-label="Простой пример">
                     <button type="button" class="btn btn-dark" data-filter="all">Усі</button>
-                    <button type="button" class="btn btn-dark" data-filter="chair">Стільці</button>
+                    <button type="button" class="btn btn-dark"  data-filter="chair">Стільці</button>
                     <button type="button" class="btn btn-dark" data-filter="sofa">Дивани</button>
                     <button type="button" class="btn btn-dark" data-filter="armchair">Крісла</button>
                     <button type="button" class="btn btn-dark" data-filter="closet">Шафи</button>
@@ -152,6 +152,7 @@
 
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
                 <div th:each="f : ${furniture}">
                 <div class="col">
                     <div class="card shadow-sm" th:classappend="${f.getType().toString().toLowerCase()}">

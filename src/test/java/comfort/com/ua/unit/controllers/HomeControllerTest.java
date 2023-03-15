@@ -1,5 +1,6 @@
-package comfort.com.ua.controllers;
+package comfort.com.ua.unit.controllers;
 
+import comfort.com.ua.controllers.HomeController;
 import comfort.com.ua.models.Furniture;
 import comfort.com.ua.models.FurnitureType;
 import comfort.com.ua.models.ImageDB;

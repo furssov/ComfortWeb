@@ -1,5 +1,6 @@
-package comfort.com.ua.controllers;
+package comfort.com.ua.unit.controllers;
 
+import comfort.com.ua.controllers.FurnitureController;
 import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.models.Furniture;
 import comfort.com.ua.models.FurnitureType;

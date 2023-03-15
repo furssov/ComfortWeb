@@ -2,6 +2,7 @@ package comfort.com.ua.services.impl;
 
 import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.models.Furniture;
+import comfort.com.ua.models.FurnitureType;
 import comfort.com.ua.repos.FurnitureRepo;
 import comfort.com.ua.services.FurnitureService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,4 +40,6 @@ public class FurnitureServiceImpl implements FurnitureService {
         if (furniture.isPresent()) return furniture;
         else throw new NoSuchFurnitureException("there is no such furniture");
     }
+
+
 }

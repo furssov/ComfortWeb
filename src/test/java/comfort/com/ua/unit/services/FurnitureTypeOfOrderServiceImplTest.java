@@ -1,10 +1,11 @@
-package comfort.com.ua.services.impl;
+package comfort.com.ua.unit.services;
 
 import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.models.FurnitureTypeOfOrder;
 import comfort.com.ua.models.TypeOfOrder;
 import comfort.com.ua.repos.FurnitureTypeOfOrderRepository;
 import comfort.com.ua.services.FurnitureTypeOfOrderService;
+import comfort.com.ua.services.impl.FurnitureTypeOfOrderServiceImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

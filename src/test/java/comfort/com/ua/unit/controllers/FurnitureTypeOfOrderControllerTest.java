@@ -1,11 +1,13 @@
-package comfort.com.ua.controllers;
+package comfort.com.ua.unit.controllers;
 
+import comfort.com.ua.controllers.FurnitureTypeOfOrderController;
 import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.models.FurnitureTypeOfOrder;
 import comfort.com.ua.services.FurnitureTypeOfOrderService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
@@ -24,6 +26,7 @@ class FurnitureTypeOfOrderControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
+    @Qualifier("furnitureTypeOfOrderServiceImpl")
     @MockBean
     private FurnitureTypeOfOrderService furnitureTypeOfOrderService;
 
