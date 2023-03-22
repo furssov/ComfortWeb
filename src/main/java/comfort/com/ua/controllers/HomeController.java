@@ -2,6 +2,7 @@ package comfort.com.ua.controllers;
 
 import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.models.FurnitureType;
+import comfort.com.ua.models.TypeOfOrder;
 import comfort.com.ua.repos.TypeOfOrderRepository;
 import comfort.com.ua.services.FurnitureService;
 import jakarta.persistence.FetchType;
@@ -13,8 +14,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import java.util.List;
+
 @Controller
-@Slf4j
 public class HomeController {
 
     @Autowired
@@ -26,8 +28,8 @@ public class HomeController {
     @GetMapping("/")
     public String homePage(Model model)
     {
-        log.info("Home page has been visited");
         model.addAttribute("types", typeOfOrderRepository.findAll());
+
         return "home";
     }
 

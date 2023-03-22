@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашній затишок</title>
+</head>
+<body>
+<div th:each="type : ${types}">
+<a th:href="@{/types/{id}(id = ${type.getId()})}" th:text="${type.getType()}"></a>
+</div>
+</body>
+</html>
