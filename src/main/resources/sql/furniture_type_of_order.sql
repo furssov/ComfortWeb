@@ -1,0 +1,10 @@
+INSERT INTO public.furniture_type_of_order (id, image, name, order_type_id) VALUES (1, '/images/furniture_type_of_order/кутові.jpg', 'Кутові дивани', 1);
+INSERT INTO public.furniture_type_of_order (id, image, name, order_type_id) VALUES (3, '/images/furniture_type_of_order/крісла.jpg', 'Крісла', 1);
+INSERT INTO public.furniture_type_of_order (id, image, name, order_type_id) VALUES (2, '/images/furniture_type_of_order/дивани.jpg', 'Звичайні дивани', 1);
+INSERT INTO public.furniture_type_of_order (id, image, name, order_type_id) VALUES (4, '/images/furniture_type_of_order/кухні.jpg', 'Кухні', 2);
+INSERT INTO public.furniture_type_of_order (id, image, name, order_type_id) VALUES (5, '/images/furniture_type_of_order/шафи.jpg', 'Шафи', 2);
+INSERT INTO public.furniture_type_of_order (id, image, name, order_type_id) VALUES (6, '/images/furniture_type_of_order/меблі_кімн.jpg', 'Меблі у різні кімнати', 2);
+INSERT INTO public.furniture_type_of_order (id, image, name, order_type_id) VALUES (9, '/images/furniture_type_of_order/стільці.jpg', 'Стільці, пуфи та крісла', 3);
+INSERT INTO public.furniture_type_of_order (id, image, name, order_type_id) VALUES (8, '/images/furniture_type_of_order/ліжка.jpg', 'Ліжка під заказ', 3);
+INSERT INTO public.furniture_type_of_order (id, image, name, order_type_id) VALUES (7, '/images/furniture_type_of_order/дивани.jpg', 'Дивани під заказ', 3);
+INSERT INTO public.furniture_type_of_order (id, image, name, order_type_id) VALUES (10, '/images/гардеробные.png', 'Гардеробні', 2);
