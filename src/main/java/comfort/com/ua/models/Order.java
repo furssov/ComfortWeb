@@ -47,7 +47,7 @@ public class Order {
     @Email(message = "Невірний запис email")
     private String email;
 
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name = "furniture_id", referencedColumnName = "id")
     private Furniture furnitureId;
 

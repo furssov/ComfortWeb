@@ -55,19 +55,10 @@
     </header>
 
     <main class="px-3">
-        <div th:if = "${mes == null}">
-            <h1>Ви зробили замовлення</h1>
-            <p class="lead" >Ми зв'яжемося з Вами протягом цього чи наступного робочого дня</p>
-            <p class="lead">
-                <a th:href="@{/}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color: black">Дякуємо!</a>
-            </p>
-        </div>
-        <div th:if = "${mes != null}">
             <h1>Помилка!</h1>
             <p class="lead">
                 <a th:href="@{/}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color: black">До головної сторінки</a>
             </p>
-        </div>
     </main>
 
     <footer class="mt-auto text-white-50">
