@@ -18,8 +18,10 @@ public class NoSuchFurnitureExceptionHandler {
     {
         Map<String, String> model = new HashMap<>();
         model.put("mes", e.getMessage());
-        ModelAndView modelAndView = new ModelAndView("orderOk", model, HttpStatus.NOT_FOUND);
+        ModelAndView modelAndView = new ModelAndView("error", model, HttpStatus.NOT_FOUND);
         return modelAndView;
     }
+
+
 
 }
