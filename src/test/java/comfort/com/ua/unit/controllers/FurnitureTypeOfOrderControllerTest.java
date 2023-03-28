@@ -8,7 +8,9 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.web.servlet.MockMvc;
@@ -20,7 +22,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@WebMvcTest(FurnitureTypeOfOrderController.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
+@AutoConfigureMockMvc
 class FurnitureTypeOfOrderControllerTest {
 
     @Autowired
@@ -37,7 +40,7 @@ class FurnitureTypeOfOrderControllerTest {
         mockMvc
                 .perform(get("/types/1"))
                 .andExpect(status().is(HttpStatus.NOT_FOUND.value()))
-                .andExpect(view().name("orderOk"))
+                .andExpect(view().name("error"))
                 .andExpect(model().attributeExists("mes"));
 
         mockMvc.perform(get("/types/2"))

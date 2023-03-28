@@ -22,6 +22,4 @@ public class NoSuchFurnitureExceptionHandler {
         return modelAndView;
     }
 
-
-
 }

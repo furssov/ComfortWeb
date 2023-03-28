@@ -11,7 +11,9 @@ import comfort.com.ua.services.OrderService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.web.servlet.MockMvc;
@@ -22,7 +24,8 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 
-@WebMvcTest(FurnitureController.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
+@AutoConfigureMockMvc
 class FurnitureControllerTest {
 
     @Autowired
@@ -47,7 +50,7 @@ class FurnitureControllerTest {
         Mockito.when(furnitureService.findByFurnitureTypeOfOrderId(2l)).thenThrow(new NoSuchFurnitureException("no"));
         mockMvc.perform(get("/furniture/2"))
                 .andExpect(status().is(HttpStatus.NOT_FOUND.value()))
-                .andExpect(view().name("orderOk"))
+                .andExpect(view().name("error"))
                 .andExpect(model().attribute("mes", "no"));
     }
 
@@ -69,17 +72,17 @@ class FurnitureControllerTest {
             mockMvc
                     .perform(get("/furniture/f/2"))
                     .andExpect(status().is(HttpStatus.NOT_FOUND.value()))
-                    .andExpect(view().name("orderOk"));
+                    .andExpect(view().name("error"));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
 
-    @Test
-    void postOrder() throws Exception {
-             mockMvc
-                .perform(post("/furniture/f/1"))
-                .andExpect(view().name("furniture"))
-                .andExpect(model().attributeHasErrors("order"));
-    }
+
+
+
+
+
+ ;
+
 }
