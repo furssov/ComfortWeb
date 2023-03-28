@@ -157,6 +157,7 @@
             <div class="col-md-7 col-lg-8">
                 <h4 class="mb-3">Заповніть контактну інформацію, щоб ми могли обговорити з вами замовлення</h4>
                 <form class="needs-validation" th:method="post" th:action="@{/furniture/f/{id}(id = ${furniture.getId()})}" th:object="${order}" id="order">
+                    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
                     <div class="row g-3">
 
                         <div class="col-sm-6">
