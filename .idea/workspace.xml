@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ComfortWeb:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b46efc41-921c-4df9-86f4-5b6b3cc6cd38" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/comfort/com/ua/ComfortWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comfort/com/ua/ComfortWebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/FurnitureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/FurnitureController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/furniture_type_of_order.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/furniture_type_of_order.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/type_of_order.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/type_of_order.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/дивани.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/dyvany.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/крісла.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/krisla.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/кутові.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/kutovi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/кухні.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/kuxni.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/гардеробные.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/garderobny.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/корпусная.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/korpusnaya.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/матрасы.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/matrazy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/на_заказ.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/na_zakaz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/офис.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/ofice.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/перетяжка.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/peretyazhka.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="e86847c779eef5ade19a6b5ab89dadbe996f88aa" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f291987e-7fc3-484c-9263-c9cef589d994/console.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dockerfile" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/nginx/nginx.conf" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/comfort/com/ua/exceptions/NoSuchFurnitureException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/comfort/com/ua/exceptions/NoSuchFurnitureExceptionHandler.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/sql/furniture.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/sql/furniture_type_of_order.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/sql/images.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/sql/type_of_order.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/furniture.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/gallery.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/orderOk.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IEAmcNAZ0kFmZzzdg0SwzSKdis" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "database.data.extractors.current.export.id": "SQL Inserts",
+    "jdk.selected.JAVA_MODULE": "openjdk-18",
+    "last_opened_file_path": "/home/user/projects/idea/ComfortWeb",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "database.query.execution",
+    "spring.configuration.checksum": "5fc750f313932d8b904e4c259f2c3a93"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/images/icons" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/sql" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="comfort.com.ua" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="comfort.com.ua.services.impl" />
+      <recent name="comfort.com.ua.repos" />
+      <recent name="comfort.com.ua.controllers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ComfortWebApplication">
+    <configuration name="All in ComfortWeb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ComfortWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FurnitureControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ComfortWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="comfort.com.ua.unit.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="comfort.com.ua.unit.controllers" />
+      <option name="MAIN_CLASS_NAME" value="comfort.com.ua.unit.controllers.FurnitureControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FurnitureTypeOfOrderControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ComfortWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="comfort.com.ua.unit.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="comfort.com.ua.unit.controllers" />
+      <option name="MAIN_CLASS_NAME" value="comfort.com.ua.unit.controllers.FurnitureTypeOfOrderControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ComfortWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="comfort.com.ua.unit.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="comfort.com.ua.unit.controllers" />
+      <option name="MAIN_CLASS_NAME" value="comfort.com.ua.unit.controllers.HomeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="comfort.com.ua.unit.services in ComfortWeb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ComfortWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="comfort.com.ua.unit.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="comfort.com.ua.unit.services" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComfortWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="ComfortWeb" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="comfort.com.ua.ComfortWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.FurnitureControllerTest" />
+      <item itemvalue="JUnit.HomeControllerTest" />
+      <item itemvalue="JUnit.comfort.com.ua.unit.services in ComfortWeb" />
+      <item itemvalue="JUnit.FurnitureTypeOfOrderControllerTest" />
+      <item itemvalue="JUnit.All in ComfortWeb" />
+      <item itemvalue="Spring Boot.ComfortWebApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in ComfortWeb" />
+        <item itemvalue="JUnit.HomeControllerTest" />
+        <item itemvalue="JUnit.FurnitureTypeOfOrderControllerTest" />
+        <item itemvalue="JUnit.comfort.com.ua.unit.services in ComfortWeb" />
+        <item itemvalue="JUnit.FurnitureControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b46efc41-921c-4df9-86f4-5b6b3cc6cd38" name="Changes" comment="" />
+      <created>1669736532706</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669736532706</updated>
+      <workItem from="1669736534733" duration="8900000" />
+      <workItem from="1669825477153" duration="5676000" />
+      <workItem from="1670002899601" duration="2458000" />
+      <workItem from="1670361681210" duration="17000" />
+      <workItem from="1670361710753" duration="4185000" />
+      <workItem from="1671133613070" duration="1209000" />
+      <workItem from="1671136556090" duration="706000" />
+      <workItem from="1671163806862" duration="4179000" />
+      <workItem from="1671396501786" duration="17900000" />
+      <workItem from="1671450464465" duration="29000" />
+      <workItem from="1671751459251" duration="1865000" />
+      <workItem from="1672111854774" duration="19774000" />
+      <workItem from="1672150349414" duration="212000" />
+      <workItem from="1672432028589" duration="3670000" />
+      <workItem from="1672451864342" duration="530000" />
+      <workItem from="1672889273672" duration="17784000" />
+      <workItem from="1673183059797" duration="10000" />
+      <workItem from="1673602449038" duration="10995000" />
+      <workItem from="1674039754104" duration="20868000" />
+      <workItem from="1674465449577" duration="17429000" />
+      <workItem from="1674487389071" duration="3208000" />
+      <workItem from="1674553687534" duration="15754000" />
+      <workItem from="1674639235186" duration="19323000" />
+      <workItem from="1674741998909" duration="6707000" />
+      <workItem from="1674923730474" duration="2191000" />
+      <workItem from="1675245748186" duration="18362000" />
+      <workItem from="1675336837169" duration="7909000" />
+      <workItem from="1675432596619" duration="3563000" />
+      <workItem from="1675598426286" duration="98000" />
+      <workItem from="1675613341914" duration="91000" />
+      <workItem from="1675673175082" duration="46000" />
+      <workItem from="1675776475931" duration="1648000" />
+      <workItem from="1675778145821" duration="133000" />
+      <workItem from="1676123326406" duration="2550000" />
+      <workItem from="1678691075747" duration="23686000" />
+      <workItem from="1678782369714" duration="5805000" />
+      <workItem from="1678867388324" duration="15348000" />
+      <workItem from="1678955849087" duration="6911000" />
+      <workItem from="1678965364002" duration="1253000" />
+      <workItem from="1678977311394" duration="12582000" />
+      <workItem from="1679047064792" duration="2236000" />
+      <workItem from="1679050105339" duration="13931000" />
+      <workItem from="1679299487699" duration="3821000" />
+      <workItem from="1679303637694" duration="22785000" />
+      <workItem from="1679390303947" duration="4220000" />
+      <workItem from="1679480263496" duration="2038000" />
+      <workItem from="1679494323573" duration="9283000" />
+      <workItem from="1679506963617" duration="3685000" />
+      <workItem from="1679560323258" duration="15297000" />
+      <workItem from="1679650268645" duration="11697000" />
+      <workItem from="1679665424090" duration="1809000" />
+      <workItem from="1679906160992" duration="9202000" />
+      <workItem from="1679997147748" duration="13529000" />
+      <workItem from="1680091852664" duration="7200000" />
+      <workItem from="1680108129671" duration="3231000" />
+      <workItem from="1680171277962" duration="33000" />
+      <workItem from="1680171521414" duration="1549000" />
+      <workItem from="1680257371537" duration="7447000" />
+      <workItem from="1680590667758" duration="2503000" />
+      <workItem from="1680593185794" duration="521000" />
+      <workItem from="1680593786266" duration="2130000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.thymeleaf.exceptions.TemplateProcessingException" package="org.thymeleaf.exceptions" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.UnsatisfiedDependencyException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ComfortWeb$All_in_ComfortWeb.ic" NAME="All in ComfortWeb Coverage Results" MODIFIED="1678708503714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ComfortWeb$HomeControllerTest__1_.ic" NAME="HomeControllerTest (1) Coverage Results" MODIFIED="1678694757465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>comfort.com.ua.controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ComfortWeb$comfort_com_ua_controllers_in_ComfortWeb.ic" NAME="comfort.com.ua.controllers in ComfortWeb Coverage Results" MODIFIED="1678703734558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>comfort.com.ua.controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ComfortWeb$FurnitureTypeOfOrderServiceImplTest.ic" NAME="FurnitureTypeOfOrderServiceImplTest Coverage Results" MODIFIED="1678705354780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>comfort.com.ua.services.impl.*</FILTER>
+    </SUITE>
+  </component>
+</project>
