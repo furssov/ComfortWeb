@@ -10,23 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b46efc41-921c-4df9-86f4-5b6b3cc6cd38" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/comfort/com/ua/ComfortWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comfort/com/ua/ComfortWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/FurnitureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/FurnitureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comfort/com/ua/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/furniture_type_of_order.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/furniture_type_of_order.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/type_of_order.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/type_of_order.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/дивани.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/dyvany.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/крісла.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/krisla.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/кутові.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/kutovi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/кухні.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furniture_type_of_order/kuxni.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/гардеробные.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/garderobny.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/корпусная.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/korpusnaya.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/матрасы.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/matrazy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/на_заказ.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/na_zakaz.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/офис.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/ofice.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/перетяжка.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/peretyazhka.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov10.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov11.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov12.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov8.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov9.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/ofice.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +107,7 @@
     "last_opened_file_path": "/home/user/projects/idea/ComfortWeb",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "database.query.execution",
@@ -310,7 +307,7 @@
       <workItem from="1680257371537" duration="7447000" />
       <workItem from="1680590667758" duration="2503000" />
       <workItem from="1680593185794" duration="521000" />
-      <workItem from="1680593786266" duration="2130000" />
+      <workItem from="1680593786266" duration="6156000" />
     </task>
     <servers />
   </component>
