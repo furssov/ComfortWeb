@@ -12,6 +12,8 @@ services:
       - "5433:5432"
     volumes:
       - ./pg_data:/var/lib/postgresql/data
+    networks:
+      - comfort-network
 
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready -U postgres -d comfort -p 5432" ]
@@ -22,6 +24,7 @@ services:
   app:
     build: .
     restart: always
+    container_name: app
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/comfort
       - SPRING_DATASOURCE_USERNAME=postgres
@@ -29,33 +32,25 @@ services:
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     ports:
       - "8080:8080"
+    networks:
+      - comfort-network
     depends_on:
       db:
         condition: service_healthy
 
-  pgadmin:
-      image: dpage/pgadmin4
-      environment:
-        - "GUNICORN_ACCESS_LOGFILE=/dev/null"
-        - PGADMIN_DEFAULT_EMAIL=gg@gamil.com
-        - PGADMIN_DEFAULT_PASSWORD=1
-      ports:
-        - "10000:80"
   nginx:
     image: nginx:1.22.0-alpine
+    ports:
+      - 80:80
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/nginx_app.conf
-    depends_on:
+      - ./nginx:/etc/nginx/conf.d
+    networks:
+      - comfort-network
+    links:
       - app
-
 volumes:
   db-data:
 
-
-
-
-
-
-
-
-
+networks:
+  comfort-network:
+    driver: bridge
