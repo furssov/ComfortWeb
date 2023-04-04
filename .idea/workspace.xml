@@ -10,41 +10,176 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b46efc41-921c-4df9-86f4-5b6b3cc6cd38" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/images.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/images.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/дит_куток.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/dyt_kutok.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/дитяча_ліжко_шафа.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/dyt_lizhko_shafa.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/дитяча_ліжко_шафа_вбудовані.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/dyt_lizh_shafa_vbud.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух1.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx1.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух1.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx1.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух2.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx2.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух2.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx2.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух2.3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx2.3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух3.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx3.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух3.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx3.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух5.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx5.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух5.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx5.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух6.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx6.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух6.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx6.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух8.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx8.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух8.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx8.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кух9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/kyx9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/меблі_для_ванної.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/meble+vannoi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/підвісна_полиця.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/pidvisna_pol.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/стіл.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/styl.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/стіл_дитяча.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/stil_dyt.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/стінка_в_спальню.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/stinka_v_spal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/тумба.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/tumba.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/тумби_для_ванної.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/tumba_vanna.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/шафа1.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/shafa1.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/шафа1.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/shafa1.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/furniture-types-of-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/furniture-types-of-order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/furniture.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/furniture.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/furnitures.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/furnitures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/ComfortWebApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/controllers/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/controllers/CommentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/controllers/FurnitureController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/controllers/FurnitureTypeOfOrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/controllers/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/exceptions/NoSuchFurnitureException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/exceptions/NoSuchFurnitureExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/models/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/models/Furniture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/models/FurnitureType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/models/FurnitureTypeOfOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/models/ImageDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/models/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/models/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/models/TypeOfOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/repos/CommentRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/repos/FurnitureRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/repos/FurnitureTypeOfOrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/repos/OrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/repos/TypeOfOrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/repos/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/security/JwtTokenRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/security/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/security/UserDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/services/FurnitureService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/services/FurnitureTypeOfOrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/services/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/services/impl/FurnitureServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/services/impl/FurnitureTypeOfOrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/services/impl/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comfort/com/ua/services/impl/UserDetailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sql/furniture.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sql/furniture_type_of_order.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sql/images.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sql/type_of_order.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/else1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/else2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/else3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/else4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/else5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/else6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furniture_type_of_order/dyvany.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furniture_type_of_order/krisla.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furniture_type_of_order/kutovi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furniture_type_of_order/kuxni.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furniture_type_of_order/lizhka.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furniture_type_of_order/mebli_kimn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furniture_type_of_order/shafy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furniture_type_of_order/stilzi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov10.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov11.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov12.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov8.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/div_zamov9.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/dyt_kutok.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/dyt_lizh_shafa_vbud.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/dyt_lizhko_shafa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kr1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kr2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kr3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kr4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kr5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kr6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kut-div1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kut-div2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kut-div3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kut-div4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kut-div5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kut-div6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx1.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx1.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx2.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx2.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx2.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx3.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx3.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx5.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx5.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx6.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx6.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx8.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx8.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/kyx9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/lizhko1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/lizhko2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/lizhko3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/lizhko4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/lizhko5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/lizhko6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/lizhko7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/lizhko8.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/lizhko_z_vbud_polyz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/meble+vannoi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/pidvisna_pol.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa1.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa1.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa10.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa11.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa12.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa8.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/shafa9.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/stil_dyt.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/stilzi_pufy_krisla1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/stilzi_pufy_krisla2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/stilzi_pufy_krisla3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/stilzi_pufy_krisla4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/stilzi_pufy_krisla5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/stilzi_pufy_krisla6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/stinka_v_spal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/styl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/tumba.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/tumba_vanna.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div10.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div11.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div12.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div8.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/furnitures/zv-div9.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/garderobny.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/homepage1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/homepage2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/homepage3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icons/envelope-at.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/korpusnaya.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/matrazy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/na_zakaz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/office.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/peretyazhka.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/slide1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/slide2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/slide3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/сss/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin_opportunities.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/comments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/furniture-types-of-order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/furniture.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/furnitures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/orderOk.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/orders.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,36 +246,36 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "database.data.extractors.current.export.id": "SQL Inserts",
-    "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "last_opened_file_path": "/home/user/projects/idea/ComfortWeb",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "database.query.execution",
-    "spring.configuration.checksum": "5fc750f313932d8b904e4c259f2c3a93"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/user/projects/idea/ComfortWeb&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;database.query.execution&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5fc750f313932d8b904e4c259f2c3a93&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/images/icons" />

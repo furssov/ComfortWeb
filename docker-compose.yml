@@ -12,6 +12,7 @@ services:
       - "5433:5432"
     volumes:
       - ./pg_data:/var/lib/postgresql/data
+      - ./src/main/resources/sql:/scripts
     networks:
       - comfort-network
 
