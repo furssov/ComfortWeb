@@ -11,19 +11,26 @@
   <component name="ChangeListManager">
     <list default="true" id="b46efc41-921c-4df9-86f4-5b6b3cc6cd38" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov10.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov11.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov12.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov3.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov4.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov5.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov6.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov7.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov8.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/div_zamov9.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/ofice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кр1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кр2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кр3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кр4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кр5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кр6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кут-див1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кут-див2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кут-див3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кут-див4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кут-див5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/кут-див6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/ліжко1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/ліжко2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/ліжко3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/ліжко4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/ліжко5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/ліжко6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/ліжко7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/furnitures/ліжко8.JPG" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,7 +314,7 @@
       <workItem from="1680257371537" duration="7447000" />
       <workItem from="1680590667758" duration="2503000" />
       <workItem from="1680593185794" duration="521000" />
-      <workItem from="1680593786266" duration="6156000" />
+      <workItem from="1680593786266" duration="6983000" />
     </task>
     <servers />
   </component>
