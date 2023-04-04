@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Пример на bootstrap 5: Простой одностраничный шаблон · Версия v5.2.3">
-    <title>Альбом | Album example for Bootstrap · Версия v5.2.3</title>
+    <title>Домашній затишок</title>
+    <link rel="shortcut icon" href="/images/home.png" type="image/png">
+
 
 
     <!-- Bootstrap core CSS -->
@@ -76,7 +78,7 @@
 <body>
 
 <header>
-    <div class="collapse bg-dark" id="navbarHeader">
+    <div class="collapse bg-dark " id="navbarHeader">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-md-7 py-4">
@@ -135,16 +137,15 @@
 
             <div class="row py-2">
                 <div class="btn-group" role="group" aria-label="Простой пример">
-                    <button type="button" class="btn btn-dark" href="#all">Усі</button>
-                    <button type="button" class="btn btn-dark" >Стільці</button>
-                    <button type="button" class="btn btn-dark" >Дивани</button>
-                    <button type="button" class="btn btn-dark" href="#krisla" >Крісла</button>
-                    <button type="button" class="btn btn-dark" >Шафи</button>
-                    <button type="button" class="btn btn-dark" >Гардеробні</button>
-                    <button type="button" class="btn btn-dark" >Ліжка</button>
-                    <button type="button" class="btn btn-dark" >Столи</button>
-                    <button type="button" class="btn btn-dark" >Пуфи</button>
-                    <button type="button" class="btn btn-dark" >Кухні</button>
+                    <a type="button" class="btn btn-dark" href="#chair">Стільці</a>
+                    <a type="button" class="btn btn-dark" href="#sofa">Дивани</a>
+                    <a type="button" class="btn btn-dark" href="#armchair" >Крісла</a>
+                    <a type="button" class="btn btn-dark" href="#closet">Шафи</a>
+                    <a type="button" class="btn btn-dark" href="#wardrobe">Гардеробні</a>
+                    <a type="button" class="btn btn-dark" href="#bed">Ліжка</a>
+                    <a type="button" class="btn btn-dark" href="#table">Столи</a>
+                    <a type="button" class="btn btn-dark" href="#puff">Пуфи</a>
+                    <a type="button" class="btn btn-dark" href="#kitchen">Кухні</a>
 
                 </div>
             </div>
@@ -156,10 +157,8 @@
                 <div th:each="f : ${furniture}">
                 <div class="col">
                     <div class="card shadow-sm" th:classappend="${f.getType().toString().toLowerCase()}">
-                        <div th:if="${f.getType().toString().equals('ARMCHAIR')}">
-                            <div id="krisla"></div>
-                        </div>
-                    <img th:src="${f.getImages().get(0).getPath()}" width="100%" height="225" />
+
+                    <img th:src="${f.getImages().get(0).getPath()}" th:id="${f.getType().toString().toLowerCase()}" width="100%" height="225" />
                         <div class="card-body">
                             <b th:text="${f.getName()}"></b>
                             <p class="card-text" th:text="${f.getDescription()}"></p>
@@ -172,7 +171,8 @@
                     </div>
             </div>
         </div>
-   </div>
+    </div>
+
 
 </main>
 
