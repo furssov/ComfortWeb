@@ -41,4 +41,8 @@ public class Furniture {
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "furniture")
     private List<ImageDB> images;
+
+    @Column
+    @Enumerated(EnumType.STRING)
+    private Priority priority;
 }

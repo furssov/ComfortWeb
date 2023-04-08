@@ -3,11 +3,13 @@ package comfort.com.ua.services.impl;
 import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.models.Furniture;
 import comfort.com.ua.models.FurnitureType;
+import comfort.com.ua.models.Priority;
 import comfort.com.ua.repos.FurnitureRepo;
 import comfort.com.ua.services.FurnitureService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -20,11 +22,14 @@ public class FurnitureServiceImpl implements FurnitureService {
 
     @Override
     public List<Furniture> findByFurnitureTypeOfOrderId(long id) throws NoSuchFurnitureException {
-        List<Furniture> furniture = furnitureRepo.findAll();
-        if (!furniture.isEmpty())
-        return furniture.stream().filter(furniture1 -> furniture1.getFurnitureTypeOfOrderId().getId() == id).collect(Collectors.toList());
+        List<Furniture> furniture = furnitureRepo.findAll()
+                .stream().filter(furniture1 -> furniture1.getFurnitureTypeOfOrderId().getId() == id).collect(Collectors.toList());
+        if (!furniture.isEmpty()) {
+            sortByPriority(furniture);
+            return furniture;
+        }
         else
-            throw new NoSuchFurnitureException("NO SUCH TYPE");
+            throw new NoSuchFurnitureException("Пробачте, тимчасова ця категорія недоступна!");
     }
 
 
@@ -39,6 +44,21 @@ public class FurnitureServiceImpl implements FurnitureService {
         Optional<Furniture> furniture = furnitureRepo.findById(id);
         if (furniture.isPresent()) return furniture;
         else throw new NoSuchFurnitureException("there is no such furniture");
+    }
+
+
+    private List<Furniture> sortByPriority(List<Furniture> furnitures) {
+        furnitures.sort(new Comparator<Furniture>() {
+            @Override
+            public int compare(Furniture o1, Furniture o2) {
+                if (o1.getPriority() != null && o1.getPriority().equals(Priority.HIGH))
+                {
+                    return -1;
+                }
+                else return 1;
+            }
+        });
+        return furnitures;
     }
 
 

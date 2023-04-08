@@ -4,6 +4,7 @@ import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.models.Furniture;
 import comfort.com.ua.models.FurnitureType;
 import comfort.com.ua.models.FurnitureTypeOfOrder;
+import comfort.com.ua.models.Priority;
 import comfort.com.ua.repos.FurnitureRepo;
 import comfort.com.ua.services.FurnitureService;
 import comfort.com.ua.services.impl.FurnitureServiceImpl;
@@ -47,11 +48,11 @@ class FurnitureServiceImplTest {
         FurnitureTypeOfOrder f1 = new FurnitureTypeOfOrder();
         f1.setId(2L);
         Furniture furniture1 = new Furniture(1L,"A","bbb","dfsdf",
-                f, Collections.emptyList(), FurnitureType.BED, Collections.emptyList());
+                f, Collections.emptyList(), FurnitureType.BED, Collections.emptyList(), Priority.LOW);
         Furniture furniture2 = new Furniture(2L,"A","bbb","dfsdf",
-                f1, Collections.emptyList(), FurnitureType.BED, Collections.emptyList());
+                f1, Collections.emptyList(), FurnitureType.BED, Collections.emptyList(), Priority.LOW);
         Furniture furniture3 =   new Furniture(1L,"A","bbb","dfsdf",
-                f, Collections.emptyList(), FurnitureType.CHAIR, Collections.emptyList());
+                f, Collections.emptyList(), FurnitureType.CHAIR, Collections.emptyList(), Priority.LOW);
 
         Mockito.when(repository.findAll()).thenReturn(List.of(furniture1, furniture2,
               furniture3));
