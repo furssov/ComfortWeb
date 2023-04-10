@@ -129,14 +129,13 @@
         </div>
     </section>
 
-
-
     <div class="album py-5 bg-light">
         <div class="container py-2  ">
 
 
             <div class="row py-2">
                 <div class="btn-group" role="group" aria-label="Простой пример">
+                    <div class="col-sm-3 col-md-9">
                     <a type="button" class="btn btn-dark" href="#chair">Стільці</a>
                     <a type="button" class="btn btn-dark" href="#sofa">Дивани</a>
                     <a type="button" class="btn btn-dark" href="#armchair" >Крісла</a>
@@ -146,13 +145,13 @@
                     <a type="button" class="btn btn-dark" href="#table">Столи</a>
                     <a type="button" class="btn btn-dark" href="#puff">Пуфи</a>
                     <a type="button" class="btn btn-dark" href="#kitchen">Кухні</a>
-
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container " id="about">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="row row-cols-sm-1 row-cols-md-3 g-3">
 
                 <div th:each="f : ${furniture}">
                 <div class="col">
