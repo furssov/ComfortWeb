@@ -15,13 +15,13 @@ import java.util.List;
 public class Furniture {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column
     private String name;
 
-    @Column
+    @Column(length = 40000)
     private String description;
 
     @Column

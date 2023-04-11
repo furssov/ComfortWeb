@@ -46,6 +46,11 @@ public class FurnitureServiceImpl implements FurnitureService {
         else throw new NoSuchFurnitureException("there is no such furniture");
     }
 
+    @Override
+    public Furniture save(Furniture furniture) {
+        return furnitureRepo.save(furniture);
+    }
+
 
     private List<Furniture> sortByPriority(List<Furniture> furnitures) {
         furnitures.sort(new Comparator<Furniture>() {

@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -22,15 +23,16 @@ import java.time.LocalDate;
 @Data
 public class Order {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "name")
     @NotEmpty(message = "Будь ласка, введіть своє ім'я та прізвище")
     private String name;
 
-    @Column(name = "comment")
+    @Column(name = "comment", length = 5000)
     @NotEmpty(message = "напишіть будь ласка ваші побажання щодо заказу або якусь важливу інформацію")
+    @Size(max = 5000, message = "будь ласка, напишіть коментар коротший ")
     private String comment;
 
     @Column(name = "date_of_order")
