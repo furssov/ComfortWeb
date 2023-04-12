@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+<a th:href="@{/admin}">Назад</a>
+<br />
+<a th:href="@{/admin/furniture/create}">Добавить мебель</a>
+<table border="5px">
+    <th>Id</th>
+    <th>Название</th>
+    <th>Описание</th>
+    <th>Цена</th>
+    <th>Приоритет</th>
+    <th>Тип(есть ли в галерее)</th>
+    <th>Тип услуги</th>
+    <th>Изменить</th>
+    <div th:each="furniture : ${furnitures}">
+        <tr>
+           <td th:text="${furniture.getId()}"></td>
+           <td th:text="${furniture.getName()}"></td>
+           <td th:text="${furniture.getDescription()}"></td>
+           <td th:text="${furniture.getPrice()}"></td>
+           <td th:text="${furniture.getPriority()}"></td>
+           <td th:text="${furniture.getType()}"></td>
+           <td th:text="${furniture.getFurnitureTypeOfOrderId().getName()}"></td>
+            <td><a th:href="@{/admin/furniture/{id}(id = ${furniture.getId()})}">Изменить</a> </td>
+        </tr>
+    </div>
+</table>
+
+</body>
+</html>

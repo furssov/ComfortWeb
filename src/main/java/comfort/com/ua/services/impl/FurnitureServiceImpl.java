@@ -47,6 +47,31 @@ public class FurnitureServiceImpl implements FurnitureService {
     }
 
     @Override
+    public void delete(Long id) {
+        furnitureRepo.deleteById(id);
+    }
+
+    @Override
+    public List<Furniture> findAll() {
+        List<Furniture> furnitures  = furnitureRepo.findAll();
+        furnitures.sort(new Comparator<Furniture>() {
+            @Override
+            public int compare(Furniture o1, Furniture o2) {
+                if(o1.getId()>o2.getId()){
+                    return 1;
+                }
+                else if (o2.getId()== o1.getId()){
+                    return 0;
+                }
+                else {
+                    return -1;
+                }
+            }
+        });
+        return furnitures;
+    }
+
+    @Override
     public Furniture save(Furniture furniture) {
         return furnitureRepo.save(furniture);
     }

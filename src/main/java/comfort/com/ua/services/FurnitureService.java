@@ -12,5 +12,7 @@ public interface FurnitureService {
     List<Furniture> findAllGallery();
     Optional<Furniture> findById(long id) throws NoSuchFurnitureException;
 
+    void delete(Long id);
+    List<Furniture> findAll();
     Furniture save(Furniture furniture);
 }
