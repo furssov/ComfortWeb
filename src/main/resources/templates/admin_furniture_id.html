@@ -5,6 +5,14 @@
     <title>Admin</title>
 </head>
 <body>
+
+<a th:href="@{/admin/furniture}"><button style="width: 100px; height: 40px;background-color: darkcyan">Назад</button></a>
+<br />
+<br />
+<img th:src="${furniture.getImages().get(0).getPath()}" style="width: 400px; height: 400px;"/>
+<br />
+<br />
+
 <form th:action="@{/admin/furniture/{id}(id = ${furniture.getId()})}" th:method="PATCH" th:object="${furniture}">
     <input type="hidden" th:field="*{id}"/>
     <label for="name">название</label>

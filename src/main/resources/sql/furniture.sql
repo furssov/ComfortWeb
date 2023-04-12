@@ -1,8 +1,8 @@
-INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (1, 'Матеріал оббивки шкірозамінник.', 'Кутовий диван', '5500 грн + матеріали', 'LOW', 'SOFA', 5);
+INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (1, 'Матеріал оббивки шкірозамінник.', 'Кутовий диван', '5500 грн + матеріали', 'LOW', null, 5);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (2, 'Матеріали : шкірозамінник. Створена заміна ППУ, ремонт столярки.', 'Кутовий диван', '10000 грн + матеріали', 'HIGH', 'SOFA', 5);
-INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (3, 'Заміна ткані на італійських диванах.', 'Великий кутовий диван', '5500 грн + матеріали', 'LOW', 'SOFA', 5);
+INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (3, 'Заміна ткані на італійських диванах.', 'Великий кутовий диван', '5500 грн + матеріали', 'LOW', null, 5);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (4, 'Перетяжка кутового п-образного дивана. Тканини шинил, у виробі зроблено заміну паралону, виконано ремонт столярні + заміна механізму трансформації. У вартість матеріалів увійде тканина при необхідності паралон, синтапон технічні тканини клей скоба при необхідності механізм трансформації.', 'Кутовий диван', '7500 грн + матеріали', 'HIGH', 'SOFA', 5);
-INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (5, 'Перетяжка кутового дивана, виконана в тканині рогожка', 'Кутовий диван', '5000 грн + матеріали', 'LOW', 'SOFA', 5);
+INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (5, 'Перетяжка кутового дивана, виконана в тканині рогожка', 'Кутовий диван', '5000 грн + матеріали', 'LOW', null, 5);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (6, 'Кутовий диван виконаний у тканині антикіготь - флок.', 'Кутовий диван', '7000 грн + матеріали', 'HIGH', 'SOFA', 5);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (7, 'Матеріали: тканини, синтепон, флізелін, клей скоба.', 'Диван + крісла', '5000 диван, 3000 кресло, + материалы', null, 'SOFA', 4);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (8, 'Перетяжка дивану + крісло. У цьому виробі тканини мікророгожка.', 'Диван', null, null, 'SOFA', 4);
@@ -14,7 +14,7 @@ INSERT INTO public.furniture (id, description, name, price, priority, type, furn
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (12, 'Матеріали: тканини, синтепон, флізелін, клей скоба.', 'Диван', '4500 грн + матеріали', 'HIGH', 'SOFA', 4);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (13, 'Диван перетяжка - Дніпро. У даному виробі зроблена заміна шкірозамінника на шкірозамінник середньої цінової категорії. Додатково синтепон клей скоба, заміна паралону ППУ на сидіннях.', 'Диван', '5000 грн + матеріали', 'HIGH', 'SOFA', 4);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (14, 'Матеріали: тканини, синтепон, флізелін, клей скоба.', 'Диван', '4500 грн + матеріали.', 'LOW', 'SOFA', 4);
-INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (15, 'Матеріали: тканини, синтепон, флізелін, клей скоба.', 'Диван + розкладне крісло', '5000 грн + матеріали', null, 'SOFA', 4);
+INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (15, 'Матеріали: тканини, синтепон, флізелін, клей скоба.', 'Диван + розкладне крісло', '5000 грн + матеріали', 'HIGH', 'SOFA', 4);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (16, 'Перетяжка диван + 2 крісла, у Дніпрі, робота дивана 7000 грн, крісло одиниця - 3500 грн дане виробу є складним у роботі, за рахунок прошивки всього чохла на синтепоні, матеріали тканина, синтепон, клей скоба, флізелін. + кант для прошивки', 'Диван', 'від 10000 грн (диван + крісло)', 'HIGH', 'SOFA', 4);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (17, 'Диван єврокнижка заміна тканини у Дніпрі. Даний виріб виконано в шкірозаміннику середньої цінової категорії, з матеріалів шкірозамінника, клей скоба, синтепон.', 'Диван', '4000 грн + матеріали', null, 'SOFA', 4);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (18, 'Перетяжка крісла в Дніпрі в італійський шкірозамінник, робота даного крісла 4500 + матеріали, ДАНИЙ ВИРОБ Вважається складним, так як чохол шиється повністю одні мцілим + прошитий на синтепоні.', 'Крісло', '4500 грн + матеріали', null, 'ARMCHAIR', 6);
@@ -52,10 +52,9 @@ INSERT INTO public.furniture (id, description, name, price, priority, type, furn
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (49, null, 'Стіл', null, null, 'TABLE', 8);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (50, null, 'Стіл у дитячу', null, null, 'TABLE', 8);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (51, null, 'Тумба для ванної кімнати', null, null, null, 8);
-INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (52, null, 'Ліжко з вбудованими полицями', null, null, 'BED', 8);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (53, null, 'Тумба', null, null, null, 8);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (54, 'Дитячий куточок. 2 підвісних столи + пенал. Фурнітура Блюм. Матеріал ламіноване дсп виробництва кроношпан. Фасади МДФ фарбований мат. даний виріб виконано за ескізом замовника.', 'Дитячий куток', '29000 грн', null, 'TABLE', 8);
-INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (55, null, 'Диван', null, null, 'SOFA', 1);
+INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (55, '', 'Диван', '', 'HIGH', null, 1);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (56, null, 'Диван', null, null, 'SOFA', 1);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (57, null, 'Диван', null, null, 'SOFA', 1);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (58, null, 'Диван', null, null, 'SOFA', 1);
@@ -67,7 +66,6 @@ INSERT INTO public.furniture (id, description, name, price, priority, type, furn
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (64, null, 'Диван', null, null, 'SOFA', 1);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (65, null, 'Диван', null, null, 'SOFA', 1);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (66, null, 'Диван', null, null, 'SOFA', 1);
-INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (67, null, 'Ліжко', null, null, 'BED', 10);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (68, null, 'Ліжко', null, null, 'BED', 10);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (69, null, 'Ліжко', null, null, 'BED', 10);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (70, null, 'Ліжко', null, null, 'BED', 10);
@@ -76,11 +74,11 @@ INSERT INTO public.furniture (id, description, name, price, priority, type, furn
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (73, null, 'Ліжко', null, null, 'BED', 10);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (74, null, 'Ліжко', null, null, 'BED', 10);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (75, null, 'Ліжко', null, null, 'BED', 10);
-INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (76, null, 'Cтільці', null, null, 'CHAIR', 7);
+INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (76, '', 'Крісло', '', 'HIGH', 'ARMCHAIR', 7);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (77, null, 'Крісло', null, null, 'ARMCHAIR', 7);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (78, null, 'Крісло', null, null, 'ARMCHAIR', 7);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (79, null, 'Пуфик', null, null, 'PUFF', 7);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (80, null, 'Стільці', null, null, 'CHAIR', 7);
-INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (81, null, 'Стільці', null, null, 'CHAIR', 7);
+INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (81, '', 'Крісло', '', 'HIGH', 'ARMCHAIR', 7);
 INSERT INTO public.furniture (id, description, name, price, priority, type, furniture_type_of_order_id) VALUES (82, 'Стінка в спальню. матеріал ламіноване дсп виробництва Австрія. полиці виконані в товщини 36 мм + фрезерування по лід підцвітку + рамкові фасади скла графіт. фурнітура Блюм під тип він - відкриття натисканням..конструкція виконана під геометрію стелі
 ', 'Стінка ', null, null, null, 8);

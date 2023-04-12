@@ -34,7 +34,7 @@ public class SecurityConfig {
     {
         return http
                 .authorizeHttpRequests()
-                .requestMatchers("/admin", "/admin/*").hasAuthority("ADMIN")
+                .requestMatchers("/admin", "/admin/*", "/admin/*/*").hasAuthority("ADMIN")
                 .requestMatchers("/*","/**").permitAll()
                 .and().formLogin()
                 .and()

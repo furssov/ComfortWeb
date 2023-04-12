@@ -2,13 +2,18 @@ package comfort.com.ua.controllers;
 
 import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.models.Furniture;
+import comfort.com.ua.models.ImageDB;
+import comfort.com.ua.repos.ImageRepo;
 import comfort.com.ua.services.FurnitureService;
 import comfort.com.ua.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.util.Optional;
 
 @Controller
@@ -20,6 +25,11 @@ public class AdminController {
     @Autowired
     private FurnitureService furnitureService;
 
+    @Autowired
+    private ImageRepo imageRepo;
+
+    @Value("${upload.path}")
+    private String uploadPath;
     @GetMapping
     public String adminPage()
     {
@@ -40,8 +50,23 @@ public class AdminController {
     }
 
     @PostMapping("/furniture/create")
-    public String postFurniture(@ModelAttribute Furniture furniture) {
+    public String postFurniture(@RequestParam("file") MultipartFile file, @ModelAttribute Furniture furniture) {
         furnitureService.save(furniture);
+        if (file != null)
+        {
+            File dir = new File(uploadPath);
+            if (dir.exists()) {
+
+                ImageDB imageDB = new ImageDB();
+
+                imageDB.setPath("/images/furnitures/"  + file.getOriginalFilename());
+                imageDB.setFurniture(furniture);
+                imageRepo.save(imageDB);
+            }
+            else {
+                dir.mkdir();
+            }
+        }
         return "redirect:/admin/furniture";
     }
 

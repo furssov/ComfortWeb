@@ -5,7 +5,11 @@
     <title>Admin</title>
 </head>
 <body>
-<form th:method="POST" th:object="${furniture}"  th:action="@{/admin/furniture/create}">
+<a th:href="@{/admin/furniture}"><button style="width: 100px; height: 40px;background-color: darkcyan">Назад</button></a>
+<br/>
+<br/>
+<br/>
+<form th:method="POST" th:object="${furniture}"  th:action="@{/admin/furniture/create}" enctype="multipart/form-data">
 
     <label for="name">название</label>
     <input type="text" id="name" th:field="*{name}"/>
@@ -51,7 +55,14 @@
         <option th:value="'LOW'" >Низкая позиция в каталоге</option>
     </select>
     <br />
-    <input type="submit" />
+    <p>Прикрепить фото</p>
+    <label>
+        <input type="file" name="file"/>
+        <button type="submit">Загрузить фото</button>
+    </label>
+    <br />
+    <br />
+    <input type="submit" value="Опубликовать" style="background-color: green;width: 200px; height: 50px;"/>
 </form>
 </body>
 </html>
