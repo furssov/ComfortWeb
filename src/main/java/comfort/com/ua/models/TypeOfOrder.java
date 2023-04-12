@@ -23,7 +23,7 @@ public class TypeOfOrder {
     @Column
     private String type;
 
-    @OneToMany(mappedBy = "orderId")
+    @OneToMany(mappedBy = "orderId", cascade = {CascadeType.REMOVE})
     private List<FurnitureTypeOfOrder> list;
 
     @Column

@@ -7,8 +7,14 @@
 <body>
 <a th:href="@{/admin}">Назад</a>
 <br />
-<a th:href="@{/admin/furniture/create}">Добавить мебель</a>
+<br />
+<br />
+<button style="width: 100px; height: 40px; background-color: green" ><a style="font-size: medium" th:href="@{/admin/furniture/create}">Добавить мебель</a></button>
+<br />
+<br />
+<br />
 <table border="5px">
+    <th>Фото</th>
     <th>Id</th>
     <th>Название</th>
     <th>Описание</th>
@@ -19,6 +25,7 @@
     <th>Изменить</th>
     <div th:each="furniture : ${furnitures}">
         <tr>
+           <td><img th:src="${furniture.getImages().get(0).getPath()}" style="width: 100px; height: 100px"/></td>
            <td th:text="${furniture.getId()}"></td>
            <td th:text="${furniture.getName()}"></td>
            <td th:text="${furniture.getDescription()}"></td>

@@ -26,7 +26,7 @@ public class FurnitureTypeOfOrder {
     private TypeOfOrder orderId;
 
 
-    @OneToMany(mappedBy = "furnitureTypeOfOrderId")
+    @OneToMany(mappedBy = "furnitureTypeOfOrderId", cascade = CascadeType.REMOVE)
     private List<Furniture> furniture;
 
     @Column
