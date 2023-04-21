@@ -70,12 +70,11 @@
             transform: scale(0);
             opacity: 0;
         }
-
     </style>
 
 
 </head>
-<body>
+<body >
 
 <header>
     <div class="collapse bg-dark " id="navbarHeader">
@@ -95,15 +94,15 @@
             </div>
         </div>
     </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="navbar navbar-dark bg-dark shadow-sm" id="home">
         <div class="container-fluid">
-            <a th:href="@{/gallery}" class="navbar-brand d-flex align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            <a href="/gallery" class="navbar-brand d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
                 <strong>Галерея</strong>
             </a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" th:href="@{/}">Головна сторінка</a>
+                    <a class="nav-link active" aria-current="page" href="/">Головна сторінка</a>
                 </li>
             </ul>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -114,9 +113,9 @@
     </div>
 </header>
 
-<main>
+<main class="bg-light">
 
-    <section class="py-5 text-center container">
+    <section class="py-5 text-center container bg-light">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h1 class="fw-light">Галерея</h1>
@@ -128,28 +127,23 @@
             </div>
         </div>
     </section>
-
-    <div class="album py-5 bg-light">
-        <div class="container py-2  ">
-
-
-            <div class="row py-2">
-                <div class="btn-group" role="group" aria-label="Простой пример">
-                    <div class="col-sm-3 col-md-9">
-                    <a type="button" class="btn btn-dark" href="#chair">Стільці</a>
-                    <a type="button" class="btn btn-dark" href="#sofa">Дивани</a>
-                    <a type="button" class="btn btn-dark" href="#armchair" >Крісла</a>
-                    <a type="button" class="btn btn-dark" href="#closet">Шафи</a>
-                    <a type="button" class="btn btn-dark" href="#wardrobe">Гардеробні</a>
-                    <a type="button" class="btn btn-dark" href="#bed">Ліжка</a>
-                    <a type="button" class="btn btn-dark" href="#table">Столи</a>
-                    <a type="button" class="btn btn-dark" href="#puff">Пуфи</a>
-                    <a type="button" class="btn btn-dark" href="#kitchen">Кухні</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="container sticky-top bg-light my-3">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#kitchen" class="nav-link active" aria-current="page">Кухні</a></li>
+                <li class="nav-item"><a href="#bed" class="nav-link">Ліжка</a></li>
+                <li class="nav-item"><a href="#sofa" class="nav-link">Дивани</a></li>
+                <li class="nav-item"><a href="#closet" class="nav-link">Шафи</a></li>
+                <li class="nav-item"><a href="#wardrobe" class="nav-link">Гардеробні</a></li>
+                <li class="nav-item"><a href="#armchair"class="nav-link">Крісла</a></li>
+                <li class="nav-item"><a href="#chair"class="nav-link">Стільці</a></li>
+                <li class="nav-item"><a href="#table"class="nav-link">Столи</a></li>
+                <li class="nav-item"><a href="#puff"class="nav-link">Пуфи</a></li>
+                <li class="nav-item"><a href="#home"class="nav-link">До початку</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="album py-3 bg-light">
         <div class="container " id="about">
             <div class="row row-cols-sm-1 row-cols-md-3 g-3">
 

@@ -14,7 +14,12 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.util.List;
 import java.util.Optional;
+import java.util.Random;
+import java.util.UUID;
 
 @Controller
 @RequestMapping("/admin")
@@ -50,21 +55,23 @@ public class AdminController {
     }
 
     @PostMapping("/furniture/create")
-    public String postFurniture(@RequestParam("file") MultipartFile file, @ModelAttribute Furniture furniture) {
+    public String postFurniture(@RequestParam("file") MultipartFile file, @ModelAttribute Furniture furniture) throws IOException {
         furnitureService.save(furniture);
         if (file != null)
         {
-            File dir = new File(uploadPath);
-            if (dir.exists()) {
-
+            UUID uuid = UUID.randomUUID();
+            String img = "furniture" + uuid + ".jpg";
+            File dir = new File(uploadPath + img);
+            if (dir.createNewFile()) {
+                file.transferTo(dir);
                 ImageDB imageDB = new ImageDB();
 
-                imageDB.setPath("/images/furnitures/"  + file.getOriginalFilename());
+                imageDB.setPath("/images/furnitures/" + img);
                 imageDB.setFurniture(furniture);
                 imageRepo.save(imageDB);
             }
             else {
-                dir.mkdir();
+                return "furnitureForm";
             }
         }
         return "redirect:/admin/furniture";
@@ -85,6 +92,17 @@ public class AdminController {
     @DeleteMapping("/furniture/{id}")
     public String deleteFurniture(@PathVariable("id") long id)
     {
+        try {
+            List<ImageDB> images = furnitureService.findById(id).get().getImages();
+            String path = "/home/user/projects/idea/ComfortWeb/src/main/resources/static";
+            for (ImageDB i : images){
+                 path = path + i.getPath();
+                File file = new File(path);
+                file.delete();
+            }
+        }catch (NoSuchFurnitureException e){
+            System.out.println(e.getMessage());
+        }
         furnitureService.delete(id);
         return "redirect:/admin/furniture";
     }
@@ -99,6 +117,7 @@ public class AdminController {
             f.get().setType(furniture.getType());
             f.get().setPrice(furniture.getPrice());
             f.get().setPriority(furniture.getPriority());
+            f.get().setFurnitureTypeOfOrderId(furniture.getFurnitureTypeOfOrderId());
             furnitureService.save(f.get());
 
         }

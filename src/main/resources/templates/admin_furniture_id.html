@@ -40,6 +40,20 @@
     </select>
     <br />
     <br />
+    <select th:field="*{furnitureTypeOfOrderId.id}">
+        <option th:value="5" >Перетяжка угловых диванов</option>
+        <option th:value="4" >Перетяжка обычных диванов</option>
+        <option th:value="6" >Перетяжка кресел</option>
+        <option th:value="9" >Кухни</option>
+        <option th:value="3" >Шкафы</option>
+        <option th:value="8" >Мебель в разные комнаты</option>
+        <option th:value="1" >Диваны под заказ</option>
+        <option th:value="10" >Кровати под заказ</option>
+        <option th:value="7">Стулья, пуфы, кресла под заказ</option>
+        <option th:value="2" >Гардеробные</option>
+    </select>
+    <br />
+    <br />
     <select th:field="*{priority}">
         <option th:value="'HIGH'" >Приоритетная позиция в каталоге</option>
         <option th:value="'LOW'" >Низкая позиция в каталоге</option>
