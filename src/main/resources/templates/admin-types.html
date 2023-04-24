@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+<button style="width: 60px; height: 30px; background-color: green; text-align: center"> <a th:href="@{/admin}">Назад</a></button>
+<table style="margin-top: 10px" border="5px">
+    <th>id</th>
+    <th>фото</th>
+    <th>название</th>
+    <th>действие</th>
+<div th:each="type : ${types}">
+    <tr>
+<td><b th:text="${type.getId()}"></b></td>
+<td><img th:src="${type.getImage()}" style="width: 100px; height: 100px"/></td>
+    <td><b th:text="${type.getType()}"></b></td>
+    <td><a th:href="@{/admin/types/{id}(id = ${type.getId()})}">Изменить/удалить</a></td>
+    </tr>
+</div>
+</table>
+</body>
+</html>

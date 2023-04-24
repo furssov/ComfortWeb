@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
+    <style>
+        button{
+            width: 100px;
+            height: 50px;
+            margin-top: 30px;
+            text-align: center;
+            color: black;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-<h3><a th:href="@{/}">На главную страницу</a></h3>
-<a th:href="@{/admin/orders}">Просмотреть заказы</a>
-<br />
-<a th:href="@{/admin/furniture}">Просмотреть мебель</a>
+<button style="background-color: darkcyan"><a th:href="@{/}">На главную страницу</a></button>
+<button style="background-color: darkkhaki"><a th:href="@{/admin/orders}">Просмотреть заказы</a>
+</button>
 
+<button style="background-color: burlywood"><a th:href="@{/admin/furniture}">Просмотреть мебель</a>
+</button>
+<button style="background-color: darkorange"><a th:href="@{/admin/types}">Просмотреть типы работ</a>
+</button>
 </body>
 </html>

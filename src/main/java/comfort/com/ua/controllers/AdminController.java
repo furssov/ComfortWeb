@@ -6,6 +6,7 @@ import comfort.com.ua.models.ImageDB;
 import comfort.com.ua.repos.ImageRepo;
 import comfort.com.ua.services.FurnitureService;
 import comfort.com.ua.services.OrderService;
+import comfort.com.ua.services.TypeOfOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -33,6 +34,9 @@ public class AdminController {
     @Autowired
     private ImageRepo imageRepo;
 
+    @Autowired
+    private TypeOfOrderService typeOfOrderService;
+
     @Value("${upload.path}")
     private String uploadPath;
     @GetMapping
@@ -41,6 +45,17 @@ public class AdminController {
         return "admin_opportunities";
     }
 
+    @GetMapping("/types")
+    public String getTypeOfOrders(Model model){
+        model.addAttribute("types",typeOfOrderService.getAll());
+        return "admin-types";
+    }
+
+    @GetMapping("/types/{id}")
+    public String getConcreteTypeOfOrder(@PathVariable Long id, Model model) throws NoSuchFurnitureException {
+        model.addAttribute("type", typeOfOrderService.getById(id));
+        return "admin-type-id";
+    }
     @GetMapping("/orders")
     public String getOrders(Model model)
     {
