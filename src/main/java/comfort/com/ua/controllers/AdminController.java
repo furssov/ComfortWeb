@@ -3,6 +3,7 @@ package comfort.com.ua.controllers;
 import comfort.com.ua.exceptions.NoSuchFurnitureException;
 import comfort.com.ua.models.Furniture;
 import comfort.com.ua.models.ImageDB;
+import comfort.com.ua.models.TypeOfOrder;
 import comfort.com.ua.repos.ImageRepo;
 import comfort.com.ua.services.FurnitureService;
 import comfort.com.ua.services.OrderService;
@@ -16,6 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Optional;
@@ -39,6 +41,14 @@ public class AdminController {
 
     @Value("${upload.path}")
     private String uploadPath;
+
+    @Value("${upload.path2}")
+    private String typesUploadPath;
+
+    private static final String PATH = "/home/user/projects/idea/ComfortWeb/src/main/resources/static";
+
+
+
     @GetMapping
     public String adminPage()
     {
@@ -56,6 +66,46 @@ public class AdminController {
         model.addAttribute("type", typeOfOrderService.getById(id));
         return "admin-type-id";
     }
+
+    @GetMapping("/types/create")
+    public String createTypeOfOrderPage(Model model){
+        model.addAttribute("type", new TypeOfOrder());
+        return "admin-create-type";
+    }
+
+    @PostMapping("/types/create")
+    public String createTypeOfOrder(@RequestParam("file") MultipartFile file, @ModelAttribute TypeOfOrder typeOfOrder) throws IOException {
+        if (file != null) {
+            String img = "type" + UUID.randomUUID() + ".jpg";
+            File file1 = new File(typesUploadPath + img);
+            if (file1.createNewFile()) {
+                file.transferTo(file1);
+                typeOfOrder.setImage("/images/" + img);
+                typeOfOrderService.save(typeOfOrder);
+                return "redirect:/admin/types";
+            }
+        }
+        throw new NoSuchFileException("there is no file");
+    }
+
+
+    @PatchMapping("/types/{id}")
+    public String changeTypeOfOrder(@PathVariable Long id, @ModelAttribute TypeOfOrder typeOfOrder) throws NoSuchFurnitureException {
+        TypeOfOrder type = typeOfOrderService.getById(id);
+        type.setType(typeOfOrder.getType());
+        typeOfOrderService.save(type);
+        return "redirect:/admin/types";
+    }
+
+    @DeleteMapping("/types/{id}")
+    public String deleteTypeOfOrder(@PathVariable Long id) throws NoSuchFurnitureException {
+        TypeOfOrder type = typeOfOrderService.getById(id);
+        File file = new File(PATH + type.getImage());
+        file.delete();
+        typeOfOrderService.delete(id);
+        return "redirect:/admin/types";
+    }
+
     @GetMapping("/orders")
     public String getOrders(Model model)
     {

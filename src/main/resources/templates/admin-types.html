@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
+    <style>
+        button{
+            width: 100px;
+            height: 50px;
+            margin-top: 30px;
+            text-align: center;
+            color: black;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-<button style="width: 60px; height: 30px; background-color: green; text-align: center"> <a th:href="@{/admin}">Назад</a></button>
+<button> <a th:href="@{/admin}">Назад</a></button>
+<button><a th:href="@{/admin/types/create}">Добавить тип</a> </button>
 <table style="margin-top: 10px" border="5px">
     <th>id</th>
     <th>фото</th>

@@ -201,9 +201,9 @@
 
             <div th:each="type : ${types}">
 
-                <div class="col">
+                <div class="col ">
                     <a style="color:#000;" th:href="@{/types/{id}(id = ${type.getId()})}">
-                    <div class="card">
+                    <div class="card mb-4">
                         <img height="300" th:src="${type.getImage()}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="color: black" th:text="${type.getType()}">Заголовок карточки</h5>

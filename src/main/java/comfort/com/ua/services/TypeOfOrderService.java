@@ -11,7 +11,6 @@ public interface TypeOfOrderService {
 
     TypeOfOrder save(TypeOfOrder typeOfOrder);
 
-    TypeOfOrder change(Long id) throws NoSuchFurnitureException;
 
     void delete(long id);
 

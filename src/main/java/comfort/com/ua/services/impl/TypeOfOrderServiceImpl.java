@@ -17,19 +17,7 @@ public class TypeOfOrderServiceImpl implements TypeOfOrderService {
 
     @Override
     public TypeOfOrder save(TypeOfOrder typeOfOrder) {
-        return save(typeOfOrder);
-    }
-
-    @Override
-    public TypeOfOrder change(Long id) throws NoSuchFurnitureException {
-        Optional<TypeOfOrder> typeOfOrder = repository.findById(id);
-        if (typeOfOrder.isPresent()){
-            return typeOfOrder.get();
-        }
-        else {
-            throw new NoSuchFurnitureException("no such type of order");
-        }
-
+        return repository.save(typeOfOrder);
     }
 
     @Override
