@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.List;
@@ -18,6 +19,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith({SpringExtension.class})
+@TestPropertySource("/application-test.properties")
 class OrderServiceImplTest {
 
     @TestConfiguration
@@ -38,9 +40,11 @@ class OrderServiceImplTest {
 
     @Test
     void save() {
-        Order order = new Order();
-        Mockito.when(repository.save(order)).thenReturn(order);
-        assertEquals(order, service.save(order));
+        for (int i = 0; i < 10000; i++) {
+            Order order = new Order();
+            Mockito.when(repository.save(order)).thenReturn(order);
+            assertEquals(order, service.save(order));
+        }
     }
 
     @Test

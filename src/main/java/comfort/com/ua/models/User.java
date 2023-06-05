@@ -7,6 +7,7 @@ import lombok.*;
 @Table(name = "users")
 @Data
 @NoArgsConstructor
+@EqualsAndHashCode
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
