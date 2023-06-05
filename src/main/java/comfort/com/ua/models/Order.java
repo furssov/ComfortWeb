@@ -24,7 +24,7 @@ import java.time.LocalDate;
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(name = "name")
     @NotEmpty(message = "Будь ласка, введіть своє ім'я та прізвище")
@@ -39,13 +39,13 @@ public class Order {
     private LocalDate dateOfOrder;
 
     @Column(name = "phone_number")
-    @Pattern(regexp = "\\+380[0-9]{9}", message = "Введіть номер телефону у форматі +3801231223")
-    @NotEmpty(message = "має бути номер телефона")
+    @Pattern(regexp = "\\+380[0-9]{9}", message = "Введіть номер телефону у форматі +380731090986")
+    @NotEmpty(message = "Номер телефона не має бути порожнім")
     @NotNull
     private String phoneNumber;
 
     @Column(name = "email")
-    @NotEmpty(message = "email не має бути пустим")
+    @NotEmpty(message = "Email не має бути порожнім")
     @Email(message = "Невірний запис email")
     private String email;
 

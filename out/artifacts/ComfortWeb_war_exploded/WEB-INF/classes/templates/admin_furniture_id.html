@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+
+<a th:href="@{/admin/furniture}"><button style="width: 100px; height: 40px;background-color: darkcyan">Назад</button></a>
+<br />
+<br />
+<img th:src="${furniture.getImages().get(0).getPath()}" style="width: 400px; height: 400px;"/>
+<br />
+<br />
+
+<form th:action="@{/admin/furniture/{id}(id = ${furniture.getId()})}" th:method="PATCH" th:object="${furniture}">
+    <input type="hidden" th:field="*{id}"/>
+    <label for="name">название</label>
+    <input type="text" id="name" th:field="*{name}"/>
+    <br />
+    <label for="desc">описание</label>
+    <input type="text" id="desc" th:field="*{description}"/>
+    <br />
+    <label for="price">прайс</label>
+    <input type="text" id="price" th:field="*{price}"/>
+
+    <p>Указать тип мебели нужно для того, чтоб он попал в галерею. Если вы не хотите чтоб эта мебель попала в галерею выберите пункт "Не в галерею"</p>
+    <br />
+    <select th:field="*{type}">
+        <option th:value="null">Не в галерею</option>
+        <option th:value="'SOFA'">Диван</option>
+        <option th:value="'CHAIR'">Стул</option>
+        <option th:value="'ARMCHAIR'">Кресло</option>
+        <option th:value="'CLOSET'"> Шкаф</option>
+        <option th:value="'WARDROBE'">Гардероб</option>
+        <option th:value="'BED'" >Кровать</option>
+        <option th:value="'TABLE'"> Стол</option>
+        <option th:value="'PUFF'">Пуфик</option>
+        <option th:value="'KITCHEN'" >Кухня</option>
+    </select>
+    <br />
+    <br />
+    <select th:field="*{furnitureTypeOfOrderId.id}">
+        <option th:value="5" >Перетяжка угловых диванов</option>
+        <option th:value="4" >Перетяжка обычных диванов</option>
+        <option th:value="6" >Перетяжка кресел</option>
+        <option th:value="9" >Кухни</option>
+        <option th:value="3" >Шкафы</option>
+        <option th:value="8" >Мебель в разные комнаты</option>
+        <option th:value="1" >Диваны под заказ</option>
+        <option th:value="10" >Кровати под заказ</option>
+        <option th:value="7">Стулья, пуфы, кресла под заказ</option>
+        <option th:value="2" >Гардеробные</option>
+    </select>
+    <br />
+    <br />
+    <select th:field="*{priority}">
+        <option th:value="'HIGH'" >Приоритетная позиция в каталоге</option>
+        <option th:value="'LOW'" >Низкая позиция в каталоге</option>
+    </select>
+    <br />
+    <br />
+    <input type="submit" style="background-color: green" value="Изменить"/>
+</form>
+<br />
+<br />
+<form th:method="DELETE" th:action="@{/admin/furniture/{id}(id = ${furniture.getId()})}">
+    <input type="submit" value="Удалить мебель" style="background-color: red">
+</form>
+</body>
+</html>

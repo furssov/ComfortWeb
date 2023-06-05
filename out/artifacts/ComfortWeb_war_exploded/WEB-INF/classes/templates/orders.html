@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="shortcut icon" href="/images/home.png" type="image/png">
+
+</head>
+<body>
+<a th:href="@{/admin}">Вернуться к админисративной панели</a>
+<table border="5px">
+    <th>Номер заказа</th>
+    <th>Заказчик</th>
+    <th>Почта</th>
+    <th>Телефон</th>
+    <th>Коментарий</th>
+    <th>Товар</th>
+    <th>На сайте</th>
+    <th>Дата заказа</th>
+  <div th:each="order : ${orders}">
+      <tr>
+          <td th:text="${order.getId()}"></td>
+          <td th:text="${order.getName()}"></td>
+          <td th:text="${order.getEmail()}"></td>
+          <td th:text="${order.getPhoneNumber()}"></td>
+          <td th:text="${order.getComment()}"></td>
+          <td th:text="${order.getFurnitureId().getName()}"></td>
+          <td><a th:href="@{/furniture/f/{id}(id = ${order.getFurnitureId().getId()})}">Посмотреть товар</a></td>
+          <td th:text="${order.getDateOfOrder()}"></td>
+      </tr>
+  </div>
+</table>
+</body>
+</html>

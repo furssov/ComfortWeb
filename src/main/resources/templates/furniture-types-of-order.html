@@ -69,12 +69,13 @@
 
             <div class="container">
                 <div class="carousel-caption text-start">
+                    <h1>Ліжка</h1>
                     <p><a class="btn btn-md btn-dark" th:href="@{/gallery}">Галерея</a></p>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="/images/furnitures/stinka_v_spal.jpg" style="width: 100vw; height: 50vh">
+            <img src="/images/furnitures/dyt_kutok.jpg" style="width: 100vw; height: 50vh">
             <div class="container">
                 <div class="carousel-caption text-start">
                     <h1>Комбіновані меблі</h1>
@@ -93,9 +94,36 @@
     </button>
 </div>
 
-<div class="container px-4 py-2 mt-3" id="work">
-    <h2 class="pb-2 border-bottom">Як ми працюємо?</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+<div class="container py-2  "  id="items">
+    <div class="row ">
+        <div class="row"><h1 style="text-align: center">Послуги</h1><i class="line"></i> </div>
+    </div>
+    <div class="row row-cols-sm-1 row-cols-md-3 gy-5 gx-5">
+
+        <div th:each="order : ${furnitureOrders}">
+
+            <div class="col">
+
+                <a style="color: black"  th:href="@{/furniture/{type}(type = ${order.getId()})}">
+                <div class="card ">
+                            <img height="300" th:src="${order.getImage()}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"  th:text="${order.getName()}">Заголовок карточки</h5>
+                    </div>
+                    </div>
+                </a>
+                </div>
+
+            </div>
+        </div>
+    <hr class="featurette-divider mt-5">
+
+    </div>
+
+<div class="container px-4 py-1 mt-1" id="work">
+    <div class="row"><h1 style="text-align: center">Як ми працюємо?</h1><i class="line"></i> </div>
+    <div class="row g-4 py-2 row-cols-1 row-cols-lg-3">
         <div class="col d-flex align-items-start">
             <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-hand-index-fill" viewBox="0 0 16 16">
@@ -139,36 +167,11 @@
         <img style="margin-bottom: 30px" src="/images/yak_my_prazyem2.jpg" />
         <img style="margin-bottom: 30px" src="/images/yak_my_prazyuem3.jpg" />
     </div>
-    <hr class="featurette-divider">
 </div>
 
-<div class="container py-2  "  id="items">
-    <div class="row ">
-        <div class="row"><h1 style="text-align: center">Послуги</h1><i class="line"></i> </div>
-    </div>
-    <div class="row row-cols-sm-1 row-cols-md-3 gy-5 gx-5">
-
-        <div th:each="order : ${furnitureOrders}">
-
-            <div class="col">
-
-                <a style="color: black"  th:href="@{/furniture/{type}(type = ${order.getId()})}">
-                <div class="card ">
-                            <img height="300" th:src="${order.getImage()}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"  th:text="${order.getName()}">Заголовок карточки</h5>
-                    </div>
-                    </div>
-                </a>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
 <!-- FOOTER -->
 <div class="container">
-    <footer class="py-3 my-4">
+    <footer class="py-1 mt-2">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a th:href="@{/}" href="" class="nav-link px-2 text-muted">Головна сторінка</a></li>
             <li class="nav-item"><a th:href="@{/gallery}" href="" class="nav-link px-2 text-muted">Галерея</a></li>

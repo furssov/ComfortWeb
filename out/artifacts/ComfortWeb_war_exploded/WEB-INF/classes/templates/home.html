@@ -1,0 +1,395 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Виготовлення меблів під заказ у Дніпрі">
+    <title>Домашній затишок</title>
+    <link rel="shortcut icon" href="/images/home.png" type="image/png">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <meta name="google-site-verification" content="kYe2TZzpO3hlbZpeajrcCN_KK4ko2q7CBD5TQkBabIc">
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .line
+        {
+            height: 3px;
+            margin: 15px auto 30px;
+            width: 100px;
+            background-color: black;
+        }
+
+
+        .card:hover {
+            transition: transform .5s;
+            transform: scale(1.1);
+        }
+
+
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+<body >
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Домашній затишок</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#items">Послуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#do">Чим займаємося</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#about">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#place">Мапа</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" th:href="@{/gallery}">Галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" th:href="@{/comments}">Коментарі</a>
+                    </li>
+                </ul>
+                <a class="btn btn-dark" href="mailto:domashniy_uyt@ukr.net"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                </svg></a>
+                <a class="btn btn-dark" href="viber://chat?number=%2B380506364330"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg></a>
+                <b class="btn btn-dark" >0661234016</b>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div id="myCarousel" class="carousel mt-2 mb-2 slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                    <img  src="/images/slide1.jpg" style="width: 100vw; height: 50vh">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Кухні</h1>
+                        <p><a class="btn btn-md btn-dark" th:href="@{/gallery}">Галерея</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/slide2.jpg" style="width: 100vw; height: 50vh">
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Ліжка</h1>
+                        <p><a class="btn btn-md btn-dark" th:href="@{/gallery}">Галерея</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/furnitures/dyt_kutok.jpg" style="width: 100vw; height: 50vh">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Комбіновані меблі</h1>
+                        <p><a class="btn btn-md btn-dark" th:href="@{/gallery}">Галерея</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container mt-2 "  id="items">
+        <hr class="featurette-divider">
+
+            <div class="row"><h1 style="text-align: center">Домашній затишок</h1><i class="line"></i></div>
+
+        <div class="row row-cols-sm-1 row-cols-md-3 ">
+
+            <div th:each="type : ${types}">
+
+                <div class="col ">
+                    <a style="color:#000;" th:href="@{/types/{id}(id = ${type.getId()})}">
+                    <div class="card mb-4">
+                        <img height="300" th:src="${type.getImage()}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: black" th:text="${type.getType()}">Заголовок карточки</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5 marketing" id="do">
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider py-3">
+
+            <div class="row gy-3">
+                <div class="row"><h1 style="text-align: center">Чим займаємося</h1><i class="line"></i> </div>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Домашній затишок виготовляє корпусні меблі у Дніпрі. <span class="text-muted">При чому будь-якої складності!</span></h2>
+                    <p class="lead">Наприклад:
+                        <i> для кухні, для віталень, для передпокою й т.д. </i>
+                    </p>
+                    <p class="lead">
+                        Ви можете замовити повний комплект меблів у Дніпрі для кімнати або окремі частини, наприклад:  <i>комп'ютерний стіл, книжкові полиці, комод, шафа-купе.</i>
+                    </p>
+
+                    <p class="lead">
+
+                        Ми виготовляємо меблі у Дніпрі з різних матеріалів:
+                     <ul>
+                    <li>ДСП</li>
+                    <li>ЛДСП</li>
+                    <li> МДФ з глянсовим або матовим покриттям</li>
+                </ul>
+                    </p>
+
+                </div>
+                <div class="col-md-5 col-sm-1">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/furnitures/kyx5.1.jpg" style=" max-width: 100vw; height: 37vh" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/furnitures/vanna_rakovyna_black.jpg" style=" max-width: 100vw; height: 37vh" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/furnitures/kr6.JPG"  style="
+                                 max-width: 100vw; height: 37vh" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider py-3">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Шафи, тумби, пуфи, крісла, тощо...<span class="text-muted">Все, що Вам потрібно!</span></h2>
+                    <p class="lead">Будь-які меблі для будинку чи офісу. Зробимо меблі для кухні, меблі для вітальні та дитячої, кабінет та офісні меблі на замовлення.</p>
+                    <p class="lead">Працюємо в різних меблевих стилях з незмінною якістю. Більше 10 років ми виготовляємо неповторні примірники меблевого виробництва в класичному, мінімалістичному стилі, в стилі модерн.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <div id="carouselExampleControls1"  class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/furnitures/kr5.JPG"  style="max-width: 100vw; height: 37vh"  alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/furnitures/kut-div2.JPG"style="max-width: 100vw; height: 37vh" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/else3.jpg"  style="max-width: 100vw; height: 37vh" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/furnitures/dyt_kutok.jpg" style="max-width: 100vw; height: 37vh" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/furnitures/dyt_lizh_shafa_vbud.jpg"  style="max-width: 100vw; height: 37vh" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/furnitures/kyx1.1.jpg"  style="max-width: 100vw; height: 37vh" alt="...">
+                            </div>
+                        </div>
+                        <button  id="carouselExampleControls2" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="container py-5" id="about">
+
+                <hr class="featurette-divider py-3">
+
+                <div class="row gy-3">
+                    <div class="row"><h1 style="text-align: center">Про нас</h1><i class="line"></i> </div>
+                </div>
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Домашній затишок</h1>
+                    <p class="col-md-8 fs-4">З 2012 року наша компанія Домашній затишок виробляє м'які та корпусні меблі у Дніпрі та по всій Україні. Надаємо послуги з перетяжки та реставрації м'яких,
+                        у тому числі антикварних меблів.</p>
+                    <a th:href="@{/comments}"> <button class="btn btn-primary btn-lg" type="button">Подивитись відгуки</button></a>
+                </div>
+            </div>
+
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 text-white bg-dark rounded-3">
+                        <h2>Послуги</h2>
+                        <p>Надаємо широкий спектр послуг з виготовлення та ремонту меблів у Дніпрі. Займаємось продажем меблевих тканин від провідних виробників. У нашому каталозі Ви зможете знайти популярні колекції шеніл, рогожки, флока, велюру, штучної шкіри і т.д.</p>
+                        <a th:href="@{/gallery}"> <button class="btn btn-outline-light" type="button">Галерея робіт</button></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Контактна інформація</h2>
+                        <p>Ви можете зв'язатись з нами, написавши нам на почту, чи на Viber чи зателефонувавши за номером телефона 0661234016. Також ми даємо зворотній зв'язок протягом робочого дня, якщо ви зробили замовлення.</p>
+                        <a href="mailto:domashniy_uyt@ukr.net">  <button class="btn btn-outline-secondary" type="button">Email</button></a>
+                        <a href="viber://chat?number=%2B380506364330"> <button  class="btn btn-outline-secondary" type="button">Viber</button></a>
+                        <button  class="btn btn-outline-secondary" type="button">0661234016</button>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+    </div>
+
+    <div class="container" id="place">
+        <hr class="featurette-divider py-2">
+        <div class="row ">
+            <div class="row"><h1 style="text-align: center">Місце положення - Дніпро</h1><i class="line"></i> </div>
+        </div>
+        <div class="row py-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.9482646142787!2d34.99660281575641!3d48.41913753948729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe4a5b19ac83b%3A0x76c8f7b66203b1b0!2z0LLRg9C70LjRhtGPINCd0L7QstC-0LHRg9C00ZbQstC10LvRjNC90LAsIDUsINCU0L3RltC_0YDQviwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0ZfQvdCwLCA0OTAwMA!5e0!3m2!1suk!2sro!4v1672116910363!5m2!1suk!2sro"
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Головна сторінка</a></li>
+                <li class="nav-item"><a href="#items" class="nav-link px-2 text-muted">Послуги</a></li>
+                <li class="nav-item"><a href="#do" class="nav-link px-2 text-muted">Що робимо</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">Про нас</a></li>
+                <li class="nav-item"><a href="#place" class="nav-link px-2 text-muted">Мапа</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2023 Домашній затишок</p>
+        </footer>
+    </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

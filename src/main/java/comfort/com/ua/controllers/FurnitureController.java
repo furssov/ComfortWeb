@@ -48,10 +48,11 @@ public class FurnitureController {
     }
 
     @PostMapping("/f/{id}")
-        public String postOrder(@PathVariable long id, @ModelAttribute Furniture furniture, @ModelAttribute("order") @Valid Order order, BindingResult bindingResult) throws NoSuchFurnitureException {
+        public String postOrder(@PathVariable long id, Model model, @ModelAttribute("order") @Valid Order order, BindingResult bindingResult) throws NoSuchFurnitureException {
 
         if (bindingResult.hasErrors())
         {
+            model.addAttribute("furniture", furnitureService.findById(id).orElseThrow());
             return "furniture";
         }
 
