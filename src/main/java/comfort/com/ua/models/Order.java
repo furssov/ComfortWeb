@@ -54,6 +54,12 @@ public class Order {
     private Furniture furnitureId;
 
 
-
-
+    public Order(String name, String comment, LocalDate dateOfOrder, String phoneNumber, String email, Furniture furnitureId) {
+        this.name = name;
+        this.comment = comment;
+        this.dateOfOrder = dateOfOrder;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.furnitureId = furnitureId;
+    }
 }

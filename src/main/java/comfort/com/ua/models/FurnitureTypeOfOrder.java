@@ -28,11 +28,20 @@ public class FurnitureTypeOfOrder {
     private TypeOfOrder orderId;
 
 
-    @OneToMany(mappedBy = "furnitureTypeOfOrderId", cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "furnitureTypeOfOrderId", cascade = CascadeType.ALL)
     private List<Furniture> furniture;
 
     @Column
     private String image;
+
+    @Override
+    public String toString() {
+        return "FurnitureTypeOfOrder{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", image='" + image + '\'' +
+                '}';
+    }
 
 
 }
