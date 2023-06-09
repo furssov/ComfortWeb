@@ -87,9 +87,7 @@
 
                 <div class="card">
 
-                    <img height="250" th:src="${f.getImages().get(0).getPath()}" class="card-img-top" alt="...">
-
-
+                    <img height="250" th:src="${f.getImages().get(0).getPath()}" style="object-fit: cover" class="card-img-top" alt="...">
 
                     <div class="card-body">
                         <h5 class="card-title" th:text="${f.getName()}">Заголовок карточки</h5>

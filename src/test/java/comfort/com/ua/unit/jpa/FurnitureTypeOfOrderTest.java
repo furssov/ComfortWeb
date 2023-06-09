@@ -42,6 +42,7 @@ public class FurnitureTypeOfOrderTest {
         Assertions.assertEquals("Furniture0", furnitureTypeOfOrderRepository.findAll().get(0).getFurniture().get(0).getName());
         Assertions.assertEquals("Furniture1", furnitureTypeOfOrderRepository.findAll().get(1).getFurniture().get(0).getName());
         Assertions.assertEquals("Furniture2", furnitureTypeOfOrderRepository.findAll().get(2).getFurniture().get(0).getName());
+
     }
 
 }

@@ -8,7 +8,9 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 public class ComfortWebApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(ComfortWebApplication.class, args);
+
     }
 
 }
