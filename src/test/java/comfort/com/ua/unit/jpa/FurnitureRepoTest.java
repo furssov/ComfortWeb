@@ -1,5 +1,6 @@
 package comfort.com.ua.unit.jpa;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import comfort.com.ua.models.*;
 import comfort.com.ua.repos.FurnitureRepo;
 
@@ -37,9 +38,23 @@ public class FurnitureRepoTest {
                     LocalDate.now(), "+380731090986", "petro@gmail.com", furniture)));
             furnitureRepo.save(furniture);
         }
+        Assertions.assertEquals(0, furnitureRepo.findById(73L).get().getImages().size());
+
+        Assertions.assertEquals(2, furnitureRepo.findById(80L).get().getImages().size());
+        Assertions.assertEquals(1, furnitureRepo.findById(80L).get().getOrders().size());
+
+
+        Assertions.assertEquals(2, furnitureRepo.findById(100L).get().getImages().size());
+        Assertions.assertEquals(1, furnitureRepo.findById(100L).get().getOrders().size());
+
+
+        Assertions.assertEquals(2, furnitureRepo.findById(143L).get().getImages().size());
+        Assertions.assertEquals(1, furnitureRepo.findById(143L).get().getOrders().size());
+
         furniture = new Furniture();
         Furniture finalFurniture = furniture;
         Assertions.assertEquals(180, furnitureRepo.findAll().size());
+
 
         ConstraintViolationException e = Assertions.assertThrows(ConstraintViolationException.class, () -> {
             finalFurniture.setOrders(List.of(new Order()));

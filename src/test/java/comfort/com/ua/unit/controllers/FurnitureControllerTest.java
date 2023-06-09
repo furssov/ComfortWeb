@@ -79,10 +79,4 @@ class FurnitureControllerTest {
     }
 
 
-
-
-
-
- ;
-
 }
