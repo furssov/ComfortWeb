@@ -18,7 +18,7 @@ public class Furniture {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column
     private String name;
@@ -33,7 +33,7 @@ public class Furniture {
     @JoinColumn(name = "furniture_type_of_order_id", referencedColumnName = "id")
     private FurnitureTypeOfOrder furnitureTypeOfOrderId;
 
-    @OneToMany(mappedBy = "furnitureId", cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "furnitureId", cascade = CascadeType.ALL)
     private List<Order> orders;
 
 
@@ -41,10 +41,20 @@ public class Furniture {
     @Enumerated(EnumType.STRING)
     private FurnitureType type;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "furniture", cascade = {CascadeType.REMOVE, CascadeType.MERGE, CascadeType.PERSIST})
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "furniture", cascade = CascadeType.ALL)
     private List<ImageDB> images;
 
     @Column
     @Enumerated(EnumType.STRING)
     private Priority priority;
+
+    @Override
+    public String toString() {
+        return "Furniture{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price='" + price + '\'' +
+                '}';
+    }
 }

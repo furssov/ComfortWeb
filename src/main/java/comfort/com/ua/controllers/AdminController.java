@@ -9,6 +9,7 @@ import comfort.com.ua.services.FurnitureService;
 import comfort.com.ua.services.OrderService;
 import comfort.com.ua.services.TypeOfOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -33,9 +34,8 @@ public class AdminController {
     @Autowired
     private FurnitureService furnitureService;
 
-    @Autowired
-    private ImageRepo imageRepo;
 
+    @Qualifier("typeOfOrderServiceImpl")
     @Autowired
     private TypeOfOrderService typeOfOrderService;
 
@@ -121,7 +121,6 @@ public class AdminController {
 
     @PostMapping("/furniture/create")
     public String postFurniture(@RequestParam("file") MultipartFile file, @ModelAttribute Furniture furniture) throws IOException {
-        furnitureService.save(furniture);
         if (file != null)
         {
             UUID uuid = UUID.randomUUID();
@@ -133,7 +132,8 @@ public class AdminController {
 
                 imageDB.setPath("/images/furnitures/" + img);
                 imageDB.setFurniture(furniture);
-                imageRepo.save(imageDB);
+                furniture.setImages(List.of(imageDB));
+                furnitureService.save(furniture);
             }
             else {
                 return "furnitureForm";

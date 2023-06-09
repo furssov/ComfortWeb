@@ -3,6 +3,7 @@ package comfort.com.ua.models;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode
 public class FurnitureTypeOfOrder {
 
     @Id
@@ -26,11 +28,20 @@ public class FurnitureTypeOfOrder {
     private TypeOfOrder orderId;
 
 
-    @OneToMany(mappedBy = "furnitureTypeOfOrderId", cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "furnitureTypeOfOrderId", cascade = CascadeType.ALL)
     private List<Furniture> furniture;
 
     @Column
     private String image;
+
+    @Override
+    public String toString() {
+        return "FurnitureTypeOfOrder{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", image='" + image + '\'' +
+                '}';
+    }
 
 
 }
