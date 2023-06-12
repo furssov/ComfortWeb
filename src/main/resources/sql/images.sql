@@ -11,6 +11,7 @@ INSERT INTO public.images (id, path, furniture_id) VALUES (11, '/images/furnitur
 INSERT INTO public.images (id, path, furniture_id) VALUES (12, '/images/furnitures/zv-div6.JPG', 11);
 INSERT INTO public.images (id, path, furniture_id) VALUES (13, '/images/furnitures/zv-div7.JPG', 12);
 INSERT INTO public.images (id, path, furniture_id) VALUES (14, '/images/furnitures/zv-div8.JPG', 13);
+INSERT INTO public.images (id, path, furniture_id) VALUES (15, '/images/furnitures/zv-div9.JPG', 14);
 INSERT INTO public.images (id, path, furniture_id) VALUES (16, '/images/furnitures/zv-div10.JPG', 15);
 INSERT INTO public.images (id, path, furniture_id) VALUES (17, '/images/furnitures/zv-div11.JPG', 16);
 INSERT INTO public.images (id, path, furniture_id) VALUES (18, '/images/furnitures/zv-div12.JPG', 17);
