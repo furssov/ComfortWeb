@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Пример на bootstrap 5: Простой одностраничный шаблон · Версия v5.2.3">
+    <meta name="description" content="Галерея кращих робіт компанії з виробництва меблів у Дніпрі Домашній затишок">
     <title>Домашній затишок</title>
     <link rel="shortcut icon" href="/images/home.png" type="image/png">
 
@@ -26,50 +26,87 @@
 
 
     <style>
-        .card
-        {
-            transition: 0.5s all ;
-        }
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+        .card.hidden {
+            display: none; /* Скрытие элемента */
         }
 
 
-        .hide
-        {
-            animation-name: hide;
-            animation-duration: 0.5s;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes hide {
-            0%{
-                visibility: visible;
-            }
-            100%{
-                visibility: hidden;
-                width: 0;
-                height: 0;
-                font-size: 0;
-                margin: 0;
-            }
-        }
-
-        .anime
-        {
-            transform: scale(0);
+        .card-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
             opacity: 0;
+            transition: opacity 0.3s;
+            cursor: pointer;
         }
+
+        .card-img-top:hover + .card-button {
+            opacity: 1;
+        }
+
+        .card-button:hover {
+            opacity: 1;
+        }
+
+        .card-button:focus {
+            outline: none;
+        }
+
+        .fullscreen-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .fullscreen-image.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .close-button:focus {
+            outline: none;
+        }
+
+
+        .fullscreen-image img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+
+        ul button{
+            margin-right: 10px;
+        }
+
+
+
     </style>
 
 
@@ -129,43 +166,48 @@
     </section>
     <div class="container sticky-top bg-light my-3">
         <header class="d-flex justify-content-center py-3">
+            <nav>
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#kitchen" class="nav-link active" aria-current="page">Кухні</a></li>
-                <li class="nav-item"><a href="#bed" class="nav-link">Ліжка</a></li>
-                <li class="nav-item"><a href="#sofa" class="nav-link">Дивани</a></li>
-                <li class="nav-item"><a href="#closet" class="nav-link">Шафи</a></li>
-                <li class="nav-item"><a href="#wardrobe" class="nav-link">Гардеробні</a></li>
-                <li class="nav-item"><a href="#armchair"class="nav-link">Крісла</a></li>
-                <li class="nav-item"><a href="#chair"class="nav-link">Стільці</a></li>
-                <li class="nav-item"><a href="#table"class="nav-link">Столи</a></li>
-                <li class="nav-item"><a href="#puff"class="nav-link">Пуфи</a></li>
-                <li class="nav-item"><a href="#home"class="nav-link">До початку</a></li>
+                <button data-f="all" class="btn btn-secondary my-2">Усі</button>
+                <button data-f="kitchen" class="btn btn-secondary my-2"> Кухні</button>
+                <button data-f="bed" class="btn btn-secondary my-2">Ліжка</button>
+                <button data-f="sofa" class="btn btn-secondary my-2">Дивани</button>
+                <button data-f="closet" class="btn btn-secondary my-2">Шафи</button>
+                <button  data-f="wardrobe"  class="btn btn-secondary my-2">Гардеробні</button>
+                <button  data-f="armchair" class="btn btn-secondary my-2"> Крісла</button>
+                <button data-f="chair" class="btn btn-secondary my-2">  Стільці</button>
+                <button data-f="table" class="btn btn-secondary my-2">Столи</button>
+                <button data-f="puff" class="btn btn-secondary my-2"> Пуфи</button>
             </ul>
+            </nav>
         </header>
     </div>
-    <div class="album py-3 bg-light">
-        <div class="container " id="about">
-            <div class="row row-cols-sm-1 row-cols-md-3 g-3">
+    <div class="container py-2  "  >
 
-                <div th:each="f : ${furniture}">
-                <div class="col">
-                    <div class="card shadow-sm" th:classappend="${f.getType().toString().toLowerCase()}">
+        <div class="row ">
 
-                    <img th:src="${f.getImages().get(0).getPath()}" th:id="${f.getType().toString().toLowerCase()}" width="100%" height="225" />
-                        <div class="card-body">
-                            <b th:text="${f.getName()}"></b>
-                            <p class="card-text" th:text="${f.getDescription()}"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted" th:text="${f.getPrice()}"></small>
-                            </div>
+            <div th:each="f : ${furniture}">
+
+
+                    <div class="card col "  style="margin-bottom: 20px" th:classappend="${f.getType().toString().toLowerCase()}">
+
+                        <img height="250"  th:src="${f.getImages().get(0).getPath()}" style="object-fit: cover; " class="card-img-top" alt="...">
+                        <button class="card-button">Открыть</button>
+                        <div class="fullscreen-image">
+                            <button class="close-button">Закрыть</button>
+                            <img th:src="${f.getImages().get(0).getPath()}" alt="Полноразмерное фото">
                         </div>
+                        <div class="card-body">
+                            <h5 class="card-title" th:text="${f.getName()}">Заголовок карточки</h5>
+                            <p class="card-text" th:text="${f.getDescription()}">Небольшой пример текста, основанного на названии карточки и составляющего основную часть содержимого карточки.
+                        </div>
+
                     </div>
                 </div>
-                    </div>
-            </div>
+        </div>
         </div>
     </div>
-
+    </div>
 
 </main>
 
@@ -181,6 +223,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script  src="/js/filter.js" ></script>
+<script  src="/js/image.js" ></script>
 
 </body>
 </html>

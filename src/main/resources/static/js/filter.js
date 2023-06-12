@@ -1,35 +1,15 @@
-// Write JavaScript here
-function app() {
-    const buttons = document.querySelectorAll('.btn')
-    const cards = document.querySelectorAll('.card')
+const filterCard = document.querySelectorAll('.card');
 
-    function filter(category, items) {
-        items.forEach((item) => {
-            const isItemFiltered = !item.classList.contains(category)
-            const isShowAll = category.toLowerCase() === 'all'
-            if (isItemFiltered && !isShowAll) {
-                item.classList.add('anime')
-            } else {
-                item.classList.remove('hide')
-                item.classList.remove('anime')
-            }
-        })
-    }
+document.querySelector('nav').addEventListener('click', () => {
+        if (event.target.tagName !== 'BUTTON') return false;
 
-    buttons.forEach((button) => {
-        button.addEventListener('click', () => {
-            const currentCategory = button.dataset.filter
-            filter(currentCategory, cards)
-        })
-    })
+        let filterClass = event.target.dataset['f'];
 
-    cards.forEach((card) => {
-        card.ontransitionend = function() {
-            if (card.classList.contains('anime')) {
-                card.classList.add('hide')
-            }
-        }
-    })
-}
-
-app()
+        filterCard.forEach((element) => {
+                if (!element.classList.contains(filterClass) && filterClass != 'all') {
+                        element.classList.add('hidden'); // Добавление класса "hidden" для скрытия элемента
+                } else {
+                        element.classList.remove('hidden'); // Удаление класса "hidden" для отображения элемента
+                }
+        });
+});
