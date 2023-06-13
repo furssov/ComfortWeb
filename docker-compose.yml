@@ -39,6 +39,17 @@ services:
       db:
         condition: service_healthy
 
+  certbot:
+    image: certbot/certbot
+    depends_on:
+        - nginx
+    container_name: certbot
+    volumes:
+        - certbot-etc:/etc/letsencrypt
+        - certbot-var:/var/lib/letsencrypt
+        - web-root:/var/www/html
+    command: certonly --webroot --webroot-path=/var/www/html --email fursovd70@gmail.com --agree-tos --no-eff-email --force-renewal -d doma-uyt.com.ua
+
   nginx:
     image: nginx:1.22.0-alpine
     restart: always
@@ -46,6 +57,9 @@ services:
       - 80:80
     volumes:
       - ./nginx:/etc/nginx/conf.d
+      - web-root:/var/html/www
+      - certbot-etc:/etc/letsencrypt
+      - certbot-var:/var/lib/letsencrypt
     networks:
       - comfort-network
     links:
