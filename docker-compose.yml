@@ -41,6 +41,7 @@ services:
 
   nginx:
     image: nginx:1.22.0-alpine
+    restart: always
     ports:
       - 80:80
     volumes:
