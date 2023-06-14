@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PATH=/opt/apache-maven-3.8.5/bin/:$PATH
+
 mvn clean package
 
 cd target

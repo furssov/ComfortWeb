@@ -42,31 +42,42 @@ services:
   certbot:
     image: certbot/certbot
     depends_on:
-        - nginx
+      - nginx
     container_name: certbot
     volumes:
-        - certbot-etc:/etc/letsencrypt
-        - certbot-var:/var/lib/letsencrypt
-        - web-root:/var/www/html
-    command: certonly --webroot --webroot-path=/var/www/html --email fursovd70@gmail.com --agree-tos --no-eff-email --force-renewal -d doma-uyt.com.ua
-
+      - certbot-etc:/etc/letsencrypt
+      - certbot-var:/var/lib/letsencrypt
+      - web-root:/var/www/html
+    command: certonly --webroot --webroot-path=/var/www/html --email pochta@gmail.com --agree-tos --no-eff-email --force-renewal -d doma-uyt.com.ua
   nginx:
     image: nginx:1.22.0-alpine
     restart: always
     ports:
       - 80:80
+      - 443:443
     volumes:
       - ./nginx:/etc/nginx/conf.d
-      - web-root:/var/html/www
+      - web-root:/var/www/html
       - certbot-etc:/etc/letsencrypt
       - certbot-var:/var/lib/letsencrypt
+      - dhparam:/etc/ssl/certs   
     networks:
       - comfort-network
     links:
       - app
 volumes:
   db-data:
+  certbot-etc:
+  certbot-var:
+  web-root:
+  dhparam:   # <======
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/user/projects/idea/ComfortWeb/dhparam/
+      o: bind
 
 networks:
   comfort-network:
     driver: bridge
+
